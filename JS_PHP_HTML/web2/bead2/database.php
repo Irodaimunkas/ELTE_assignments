@@ -22,6 +22,7 @@ function vegrehajtas($kapcsolat, $sql, $parameterek = [])
     ->execute($parameterek);
 }
 
+//deleted the credentials here, for safety reasons of course
 function dbKapcsolodas()
 {
   $dbConnectionString = 'mysql:host=localhost;dbname=';
