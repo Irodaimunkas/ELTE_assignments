@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>264</x>
+      <y>56</y>
+      <w>168</w>
+      <h>208</h>
+    </coordinates>
+    <panel_attributes>MaciLaciModel: Class_
+--
+- _table : FieldTable
+- _score : int
+- _gameTime : double
+--
++ MaciLaciModel()
++ NewGame() : void
++ OnKeyPressed(int, int, Keys) : void
++ OnTimer() : void
+&lt;&lt;properties&gt;&gt;
++ GameTime : double
++ Score : int
++ Table : FieldTable
+&lt;&lt;events&gt;&gt;
++ GameWon() : EventHandler
++ GameLost() : EventHandler</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>368</x>
+      <y>592</y>
+      <w>168</w>
+      <h>184</h>
+    </coordinates>
+    <panel_attributes>Enemies: Class_
+--
+- _x : int
+- _y : int
+- _dir : int
+- _lrup : char
+--
++ setXY(int, int) : void
++ SetDir(int, int) : void
++ SetLRUP(char) : void
+&lt;&lt;properties&gt;&gt;
++ GetX : int
++ GetY : int
++ Dir : int
++ LRUP : char</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>264</x>
+      <y>296</y>
+      <w>168</w>
+      <h>256</h>
+    </coordinates>
+    <panel_attributes>FieldTable: Class_
+--
+- _tableSize : int
+- _tableValues : int[,]
+- _enemyCoord : Enemies[]
+- _player : Player
+- _enemyNum : int
+- _maxScore : int
+--
++ FieldTable()
++ SetTableSize(int) : void
++ SetMaxScore(int) : void
++ SetEnemiesSize(int) : void
++ Enemy(int) : Enemy
++ SetValue(int, int, int) : void
+&lt;&lt;properties&gt;
++ MaxScore : int
++ EnemyNum : int
++ Player : Player
++ Size : int
++ this[int, int] : int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>112</x>
+      <y>592</y>
+      <w>168</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Player: Class_
+--
+- _x : int
+- _y : int
+--
++ Player()
++ setXY(int, int) : void
+&lt;&lt;properties&gt;&gt;
++ GetX : int
++ GetY : int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>672</x>
+      <y>400</y>
+      <w>192</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>MapLoad: Class_
+--
++ LoadMap(string, FieldTable) : void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>672</x>
+      <y>320</y>
+      <w>192</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+IMapLoad: Class_
+--
++ LoadMap(string, FieldTable) : void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>504</x>
+      <y>8</y>
+      <w>360</w>
+      <h>272</h>
+    </coordinates>
+    <panel_attributes>MaciLaci: Class_
+--
+- _dataAccess : IMapLoad
+- _model : MaciLaciModel
+- _labelGrid : Label[,]
+- _gameModePath : string
+- _width : int
+- _height : int
+--
++ MaciLaciForm()
+- GenerateTable() : void
+- ClearTable() : void
+- MaciLaciForm_Load(object sender, EventArgs e) : void
+- MaciLaciForm_KeyDown(object sender, KeyEventArgs e) : void
+- _timer_Tick(object sender, EventArgs e) : void
+- kicsiToolStripMenuItem_Click(object sender, EventArgs e) : void
+- közepesToolStripMenuItem_Click(object sender, EventArgs e) : void
+- nagyToolStripMenuItem_Click(object sender, EventArgs e) : void
+- újJátékToolStripMenuItem_Click(object sender, EventArgs e) : void
+- szünetToolStripMenuItem_Click(object sender, EventArgs e) : void
+- OnGameLost(Object sender, EventArgs e) : void
+- OnGameWon(Object sender, EventArgs e) : void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>760</x>
+      <y>360</y>
+      <w>24</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>768</x>
+      <y>272</y>
+      <w>24</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>328</x>
+      <y>256</y>
+      <w>24</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>344</x>
+      <y>544</y>
+      <w>136</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0;150.0;50.0;150.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>192</x>
+      <y>544</y>
+      <w>176</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>200.0;10.0;200.0;50.0;10.0;50.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>424</x>
+      <y>160</y>
+      <w>96</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>100.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>424</x>
+      <y>328</y>
+      <w>264</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;310.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>896</x>
+      <y>120</y>
+      <w>168</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Program: Class_
+--
+- Main() : void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>856</x>
+      <y>128</y>
+      <w>56</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;50.0;10.0</additional_attributes>
+  </element>
+</diagram>

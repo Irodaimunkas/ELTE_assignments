@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Wall-E</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="css/mine.css" rel="stylesheet" media="screen">
+		<script type="text/javascript" src="css/bootstrap-responsive.min.js"></script>
+        <script type="text/javascript" src="walle.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <h1>Wall-E</h1>
+            <div class="row-fluid">
+                <div id="map-select">
+                    <p>Pick a map: </p>
+                    <input class="btn" id="smallBtn" type="button" value="Small">
+                    <input class="btn" id="bigBtn" type="button" value="Big">
+                </div>
+                <div id="game">
+                    <table id="game-table" class="table table-bordered invisible">
+                        
+                    </table>
+                    <br>
+                    <table id="inputs-table" class="table table-bordered inputs invisible">
+                        
+                    </table>
+                    <br>
+                    <table id="comms-table" class="table table-bordered comms invisible">
+                    
+                    </table>
+                    <p id="time"></p>
+                    <input class="btn invisible" id="new-game" type="button" value="New Game">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

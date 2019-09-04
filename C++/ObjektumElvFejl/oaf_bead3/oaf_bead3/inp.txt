@@ -1,0 +1,11 @@
+5
+P
+S 3000
+L 500
+P
+P
+3
+Loller C
+Rule34 G
+Attack T
+2 1 3 1 5 1 2 4 1

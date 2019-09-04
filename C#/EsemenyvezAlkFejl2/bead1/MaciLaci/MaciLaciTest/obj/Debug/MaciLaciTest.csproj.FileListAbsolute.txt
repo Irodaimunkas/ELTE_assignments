@@ -1,0 +1,17 @@
+C:\Users\gonda\Desktop\eva2_bead1\bead1\MaciLaci\MaciLaciTest\obj\Debug\MaciLaciTest.csprojAssemblyReference.cache
+C:\Users\gonda\Desktop\eva2_bead1\bead1\MaciLaci\MaciLaciTest\obj\Debug\MaciLaciTest.csproj.CoreCompileInputs.cache
+C:\Users\gonda\Desktop\eva2_bead1\bead1\MaciLaci\MaciLaciTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\gonda\Desktop\eva2_bead1\bead1\MaciLaci\MaciLaciTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\gonda\Desktop\eva2_bead1\bead1\MaciLaci\MaciLaciTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\gonda\Desktop\eva2_bead1\bead1\MaciLaci\MaciLaciTest\bin\Debug\MaciLaciTest.dll
+C:\Users\gonda\Desktop\eva2_bead1\bead1\MaciLaci\MaciLaciTest\bin\Debug\MaciLaciTest.pdb
+C:\Users\gonda\Desktop\eva2_bead1\bead1\MaciLaci\MaciLaciTest\bin\Debug\MaciLaci.exe
+C:\Users\gonda\Desktop\eva2_bead1\bead1\MaciLaci\MaciLaciTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\gonda\Desktop\eva2_bead1\bead1\MaciLaci\MaciLaciTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\gonda\Desktop\eva2_bead1\bead1\MaciLaci\MaciLaciTest\bin\Debug\MaciLaci.pdb
+C:\Users\gonda\Desktop\eva2_bead1\bead1\MaciLaci\MaciLaciTest\bin\Debug\MaciLaci.exe.config
+C:\Users\gonda\Desktop\eva2_bead1\bead1\MaciLaci\MaciLaciTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\gonda\Desktop\eva2_bead1\bead1\MaciLaci\MaciLaciTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\gonda\Desktop\eva2_bead1\bead1\MaciLaci\MaciLaciTest\obj\Debug\MaciLaciTest.csproj.CopyComplete
+C:\Users\gonda\Desktop\eva2_bead1\bead1\MaciLaci\MaciLaciTest\obj\Debug\MaciLaciTest.dll
+C:\Users\gonda\Desktop\eva2_bead1\bead1\MaciLaci\MaciLaciTest\obj\Debug\MaciLaciTest.pdb

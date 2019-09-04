@@ -1,0 +1,59 @@
+div#header {
+	background-color: #FFFFFF;
+}
+
+body {
+	background-color: #000000;
+	background-image: url("../images/background.jpg");
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+body.mine {
+	font-family: 'Anton', sans-serif;
+	font-size: 18px;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+details {
+	color: #FFFFFF;
+}
+
+div {
+	color: #FFFFFF;
+}
+
+.verticalLine {
+  border-right: solid #FFFFFF;
+}
+
+video.embedded {
+	max-width: 640px;
+    width: 100%;
+    height: auto;
+}
+
+div#footer {
+	background-color: #000000;
+}
+
+p.textsizer {
+	color: #000000;
+}
+
+hr {
+	 color: #FFFFFF;
+}
+
+.inactive {
+	text-shadow: none;
+}
+
+a.link {
+	text-decoration: underline;
+}
+
+#maincontent a:visited, #subcontent a:visited {
+	color: #808080;
+}

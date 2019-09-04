@@ -1,0 +1,115 @@
+[
+    {
+        "name": "bigMap",
+        "difficulty": "easy",
+        "player": {
+            "row": 4,
+            "column": 8,
+            "direction": "left"
+        },
+        "damage": {
+            "row": 0,
+            "column": 8
+        },
+        "table": [
+            "\u25a9\u25a9\u25a9\u25fc\u2191\u25a9\u25a9\u25a9\u2739\u25a9\u25a9\u25a9",
+            "\u25a9\u25a9\u25a9\u25a9\u2191\u25a9\u25a9\u25a9\u25a9\u25a9\u25a9\u25a9",
+            "\u25a9\u25a9\u25a9\u25a9\u2ba4\u2190\u2190\u2190\u2190\u2190\u2190\u21ba\u25a9\u25a9",
+            "\u25a9\u25a9\u25a9\u25a9\u25a9\u25a9\u25a9\u25a9\u25a9\u25a9\u25a9\u25a9",
+            "\u25a9\u25fc\u25fc\u25a9\u25a9\u25a9\u25a9\u25a9\u25a9\u25a9\u25a9\u25a9"
+        ],
+        "walls": [
+            {
+                "row": 4,
+                "column": 5,
+                "side": "up"
+            },
+            {
+                "row": 4,
+                "column": 5,
+                "side": "left"
+            }
+        ],
+        "time": 30000
+    },
+    {
+        "name": "smallMap",
+        "difficulty": "very_hard",
+        "player": {
+            "row": 3,
+            "column": 3,
+            "direction": "left"
+        },
+        "damage": {
+            "row": 1,
+            "column": 2
+        },
+        "table": [
+            "\u25a9\u2ba3\u2192\u2192\u2ba7",
+            "\u25fc\u2191\u2739\u25a9\u2193",
+            "\u2191\u2ba4\u2190\u25a9\u2193",
+            "\u25a9\u25a9\u25a9\u25a9\u25fc"
+        ],
+        "walls": [
+            {
+                "row": 3,
+                "column": 3,
+                "side": "right"
+            }
+        ],
+        "time": 20000
+    },
+    {
+        "name": "trial",
+        "difficulty": "very_easy",
+        "player": {
+            "row": 2,
+            "column": 2,
+            "direction": "left"
+        },
+        "damage": {
+            "row": 0,
+            "column": 0
+        },
+        "table": [
+            "\u25fc\u25a9\u2739",
+            "\u21ba\u25a9\u25a9",
+            "\u2191\u25a9\u25a9"
+        ],
+        "walls": [
+            {
+                "row": 2,
+                "column": 2,
+                "side": "left"
+            }
+        ],
+        "time": 20000
+    },
+    {
+        "name": "heyChat:)",
+        "difficulty": "platchat",
+        "player": {
+            "row": 3,
+            "column": 3,
+            "direction": "left"
+        },
+        "damage": {
+            "row": 0,
+            "column": 0
+        },
+        "table": [
+            "\u2739\u25a9\u25a9\u25a9\u21bb",
+            "\u25a9\u2192\u2192\u2ba5\u25fc",
+            "\u25a9\u25a9\u25a9\u25a9\u25a9",
+            "\u25a9\u25a9\u25a9\u25a9\u25a9"
+        ],
+        "walls": [
+            {
+                "row": 3,
+                "column": 0,
+                "side": "right"
+            }
+        ],
+        "time": 20000
+    }
+]

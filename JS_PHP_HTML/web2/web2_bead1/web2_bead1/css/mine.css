@@ -1,0 +1,58 @@
+table.inputs{
+    background-color: gold;
+}
+
+table.comms{
+    background-color: hotpink;
+}
+
+table {
+    border: 10px;
+    border-color: black;
+}
+
+td.rotate{
+    background-color: orangered;
+}
+
+td.hole{
+    background-color: black;
+}
+
+td.damage{
+    background-color: green;
+}
+
+td.conveyor{
+    background-color: aqua;
+}
+
+td.robot{
+    background-color: greenyellow;
+}
+
+td.field{
+    background-color: grey;
+}
+
+td.mine{
+    text-align: center;
+    vertical-align: middle;
+    border-width: 1px;
+}
+
+td.up{
+    border-top: 4px solid black;
+}
+
+td.down{
+    border-bottom: 4px solid black;
+}
+
+td.left{
+    border-left: 4px solid black;
+}
+
+td.right{
+    border-right: 4px solid black;
+}

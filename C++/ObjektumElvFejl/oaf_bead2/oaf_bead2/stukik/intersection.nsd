@@ -1,0 +1,85 @@
+9
+0
+1
+(x.isEmpty() || a.isEmpty())
+0
+0
+0
+0
+1
+0
+1
+_first = _last = NULL;
+11
+1
+0
+1
+bagElem *p;
+7
+0
+1
+(bagElem *q_x = x._first; q_x != NULL; q_x = q_x->next)
+0
+0
+0
+0
+7
+0
+1
+(bagElem *q_a = a._first; q_a != NULL; q_a = q_a->next)
+0
+0
+0
+0
+9
+0
+1
+(q_a->_val == q_x->_val)
+0
+0
+0
+0
+1
+0
+1
+p = new bagElem;
+1
+0
+1
+p->next = NULL;
+9
+0
+1
+(_first == NULL)
+0
+0
+0
+0
+1
+0
+1
+_first = _last = p;
+11
+1
+0
+1
+_last->next = p;
+1
+0
+1
+_last = p;
+11
+1
+0
+1
+p->_val = q_x->_val;
+1
+0
+1
+p->_count = std::min(q_x->_count, q_a->_count);
+11
+11
+11
+11
+11
+11

@@ -1,0 +1,248 @@
+9
+0
+1
+(a.isEmpty())
+0
+0
+0
+0
+1
+0
+1
+_first = b._first;
+1
+0
+1
+_last = b._last;
+11
+9
+0
+1
+(b.isEmpty())
+0
+0
+0
+0
+1
+0
+1
+_first = a._first;
+1
+0
+1
+_last = a._last;
+11
+1
+0
+1
+bagElem *q_a, *q_b, *p;
+1
+0
+1
+q_a = a._first;
+1
+0
+1
+q_b = b._first;
+5
+0
+1
+((q_a != NULL) && (q_b != NULL))
+9
+0
+1
+(q_a->_val == q_b->_val)
+0
+0
+0
+0
+9
+0
+1
+(abs(q_a->_count - q_b->_count) == 0)
+0
+0
+0
+0
+1
+0
+1
+q_a = q_a->next;
+1
+0
+1
+q_b = q_b->next;
+11
+1
+0
+1
+p = new bagElem;
+1
+0
+1
+p->next = NULL;
+9
+0
+1
+(_first == NULL)
+0
+0
+0
+0
+1
+0
+1
+_first = _last = p;
+11
+1
+0
+1
+_last->next = p;
+1
+0
+1
+_last = p;
+11
+1
+0
+1
+p->_val = q_b->_val;
+1
+0
+1
+p->_count = abs(q_b->_count - q_a->_count);
+1
+0
+1
+q_a = q_a->next;
+1
+0
+1
+q_b = q_b->next;
+11
+11
+9
+0
+1
+(q_a->_val > q_b->_val)
+0
+0
+0
+0
+1
+0
+1
+p = new bagElem;
+1
+0
+1
+p->next = NULL;
+9
+0
+1
+(_first == NULL)
+0
+0
+0
+0
+1
+0
+1
+_first = _last = p;
+11
+1
+0
+1
+_last->next = p;
+1
+0
+1
+_last = p;
+11
+1
+0
+1
+p->_val = q_b->_val;
+1
+0
+1
+p->_count = q_b->_count;
+1
+0
+1
+q_b = q_b->next;
+11
+1
+0
+1
+p = new bagElem;
+1
+0
+1
+p->next = NULL;
+9
+0
+1
+(_first == NULL)
+0
+0
+0
+0
+1
+0
+1
+_first = _last = p;
+11
+1
+0
+1
+_last->next = p;
+1
+0
+1
+_last = p;
+11
+1
+0
+1
+p->_val = q_a->_val;
+1
+0
+1
+p->_count = q_a->_count;
+1
+0
+1
+q_a = q_a->next;
+11
+11
+11
+9
+0
+1
+(q_a == NULL)
+0
+0
+0
+0
+1
+0
+1
+_last->next = q_b;
+1
+0
+1
+_last = b._last;
+11
+1
+0
+1
+_last->next = q_a;
+1
+0
+1
+_last = a._last;
+11
+11
+11
+11

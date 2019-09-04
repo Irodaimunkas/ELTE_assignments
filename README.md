@@ -1,0 +1,1 @@
+WEB2 második beadandójából (php-s rész), nyilván kivettem az adatbázisomhoz szükséges belépési adatokat.

@@ -1,0 +1,10 @@
+C:\Users\gonda\Desktop\eva2_bead1\bead1\MaciLaci\MaciLaci\bin\Debug\MaciLaci.exe.config
+C:\Users\gonda\Desktop\eva2_bead1\bead1\MaciLaci\MaciLaci\bin\Debug\MaciLaci.exe
+C:\Users\gonda\Desktop\eva2_bead1\bead1\MaciLaci\MaciLaci\bin\Debug\MaciLaci.pdb
+C:\Users\gonda\Desktop\eva2_bead1\bead1\MaciLaci\MaciLaci\obj\Debug\MaciLaci.csprojAssemblyReference.cache
+C:\Users\gonda\Desktop\eva2_bead1\bead1\MaciLaci\MaciLaci\obj\Debug\MaciLaci.Properties.Resources.resources
+C:\Users\gonda\Desktop\eva2_bead1\bead1\MaciLaci\MaciLaci\obj\Debug\MaciLaci.MaciLaciForm.resources
+C:\Users\gonda\Desktop\eva2_bead1\bead1\MaciLaci\MaciLaci\obj\Debug\MaciLaci.csproj.GenerateResource.cache
+C:\Users\gonda\Desktop\eva2_bead1\bead1\MaciLaci\MaciLaci\obj\Debug\MaciLaci.csproj.CoreCompileInputs.cache
+C:\Users\gonda\Desktop\eva2_bead1\bead1\MaciLaci\MaciLaci\obj\Debug\MaciLaci.exe
+C:\Users\gonda\Desktop\eva2_bead1\bead1\MaciLaci\MaciLaci\obj\Debug\MaciLaci.pdb

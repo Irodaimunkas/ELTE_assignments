@@ -1,0 +1,35 @@
+# depslib dependency file v1.0
+1493138738 source:c:\users\gonda\desktop\bead\bead2\main.cpp
+	<iostream>
+	<vector>
+	<limits>
+	"input_vector_matrix.h"
+	"input_vector_matrix_f.h"
+	"most_frequent_specie.h"
+
+1492982957 c:\users\gonda\desktop\bead\bead2\input_vector_matrix.h
+	<vector>
+
+1493116595 source:c:\users\gonda\desktop\bead\bead2\input_vector_matrix.cpp
+	<iostream>
+	<vector>
+	<limits>
+	"input_vector_matrix.h"
+
+1493055546 c:\users\gonda\desktop\bead\bead2\input_vector_matrix_f.h
+	<vector>
+
+1493117717 source:c:\users\gonda\desktop\bead\bead2\input_vector_matrix_f.cpp
+	<iostream>
+	<vector>
+	<fstream>
+	<cstdlib>
+	"input_vector_matrix_f.h"
+
+1493054072 source:c:\users\gonda\desktop\bead\bead2\most_frequent_specie.cpp
+	<vector>
+	"most_frequent_specie.h"
+
+1492984781 c:\users\gonda\desktop\bead\bead2\most_frequent_specie.h
+	<vector>
+

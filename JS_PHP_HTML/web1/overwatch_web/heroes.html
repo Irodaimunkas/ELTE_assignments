@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Heroes - Overwatch 'n stuff</title>
+<link rel="icon" type="image/png" href="ow_fav.png">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- My own css -->
+<link rel="stylesheet" href="css/ow_css.css">
+
+<!-- UTF-8 coding -->
+<meta charset="utf-8" /> 
+
+<!-- Font from Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body id="body" class="mine">
+
+<!-- Header -->
+<header>
+	<div class="container-fluid">
+		<img class="img-responsive center-block" src="images/overwatch-header.png" alt="overwatch header">
+	</div>
+</header>
+
+<!-- Navigation -->
+<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+		<div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li><a href="index.html">Home</a></li>
+				<li class="active"><a href="heroes.html">Heroes</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<!-- Page's content -->
+<div class="container-fluid">
+	<table class="table table-bordered table-hover">
+	<caption>
+		<details>
+			<summary>Hero stats (5 most popular's)</summary>
+			<p>The most important stats for anyone trying to improve.</p>
+		</details>
+	</caption>
+    <thead>
+      <tr>
+        <th>Name</th>
+		<th>Pickrate</th>
+        <th>Eliminations/game</th>
+        <th>Winrate</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Mercy</td>
+        <td>14.71%</td>
+        <td>1.85</td>
+		<td>52.23%</td>
+      </tr>
+      <tr>
+        <td>D.Va</td>
+        <td>7.04%</td>
+		<td>27.46</td>
+        <td>52.19%</td>
+      </tr>
+      <tr>
+        <td>Reinhardt</td>
+        <td>6.89%</td>
+		<td>18.93</td>
+        <td>51.43%</td>
+      </tr>
+	  <tr>
+        <td>Zenyatta</td>
+        <td>5.58%</td>
+		<td>18.15</td>
+        <td>52.23%</td>
+      </tr>
+	  <tr>
+        <td>Zarya</td>
+        <td>5.37%</td>
+		<td>24.95</td>
+        <td>49.16%</td>
+      </tr>
+    </tbody>
+  </table>
+	<div class="row">
+		<div class="col-md-3 verticalLine">
+			<ul class="nav nav-pills">
+				<li class="dropdown active">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Offense
+					<span class="caret"></span></a>
+					<ul class="dropdown-menu inactive">
+						<li class="active"><a data-toggle="pill" href="#genji">Genji</a></li>
+						<li><a data-toggle="pill" href="#mccree">McCree</a></li>
+						<li><a data-toggle="pill" href="#pharah">Pharah</a></li> 
+						<li><a data-toggle="pill" href="#reaper">Reaper</a></li> 
+						<li><a data-toggle="pill" href="#soldier76">Soldier:76</a></li> 
+						<li><a data-toggle="pill" href="#tracer">Tracer</a></li> 
+						<li><a data-toggle="pill" href="#sombra">Sombra</a></li> 
+						<li><a data-toggle="pill" href="#doomfist">Doomfist</a></li> 
+					</ul>
+				</li>
+			</ul>
+			
+			<div class="tab-content">
+				<div id="genji" class="tab-pane fade in active">
+					<h1>Genji</h1>
+					<p>Genji is an Offense hero who specializes in melee combat. Although his primary attack is a ranged Shuriken toss, his other skills focus on melee combat attacks. He specializes in speed and damage, but lacks defense and health making him extremely weak if caught out of position.</p>
+
+					<p>Genji is a character that should be sneaking around the edges of the map and slashing at the people he finds wandering around by themselves. His ultimate allows him to jump into fights more recklessly, but even then caution should be used as he doesn't have much health to draw upon.</p>
+				</div>
+				<div id="mccree" class="tab-pane fade">
+					<h1>McCree</h1>
+					<p>McCree is a powerful Offense hero who can dish out insane amounts of damage in just a few brief seconds. He is great at one on one encounters, and his ultimate allows him to clear out entire groups of enemies in mere seconds.</p>
+
+					<p>The downside to McCree is his slow movement speed, and even slower firing weapon. If his shots aren't on target, he will quickly die due to his low HP pool, and general lack of movement speed. He does have a roll, which can save your life in some cases, but it can't always be relied upon to get you out of a sticky situation.</p>
+				</div>
+				<div id="doomfist" class="tab-pane fade">
+					<h1>Doomfist</h1>
+					<p>Doomfist’s cybernetics make him a highly-mobile, powerful frontline fighter. In addition to dealing ranged damage with his Hand Cannon, Doomfist can slam the ground, knock enemies into the air and off balance, or charge into the fray with his Rocket Punch. When facing a tightly packed group, Doomfist leaps out of view, then crashes down to earth with a spectacular Meteor Strike.</p>
+				</div>
+				<div id="pharah" class="tab-pane fade">
+					<h1>Pharah</h1>
+					<p>Pharah is a long range Offense character. She uses a powerful rocket launcher that deals high damage not only to the target hit, but anyone nearby. She is also highly mobile thanks to her jump jets, which allow her to fly for short periods of time.</p>
+
+					<p>The downside of Pharah is her rather slow firing weapon, and exposure to the enemy. Her abilities make her a prime target as she flies around, and anyone paying attention to the skills will have easy shots against her as she isn't able to dodge while flying.</p>
+				</div>
+				<div id="reaper" class="tab-pane fade">
+					<h1>Reaper</h1>
+					<p>Reaper is an Offense hero with powerful short to medium range damage. His shotguns can nearly one hit kill weaker characters if they make the mistake of getting to close to him. He is also good at traversing the map thanks to his invincibility and teleporting skill.</p>
+
+					<p>However, with that said, Reaper does suffer at range, as his shotguns only work in close quarters combat. He is also one of the slower moving characters, making it tough for him to chase faster characters down.</p>
+				</div>
+				<div id="soldier76" class="tab-pane fade">
+					<h1>Soldier:76</h1>
+					<p>A highly trained warrior, Soldier: 76 is an Offense character. He specializes in ranged combat, using his Heavy Pulse Rifle to dish out consistent damage at almost any range. His heal allows him to be self sufficient, and his rockets are great at eliminating large targets, or stationary ones. Due to his mix of skills, he is great in almost any game mode.</p>
+
+					<p>His downside is his lack of a specialty. He suffers at close range, and doesn't have any extreme range options like Widowmaker. Although his damage is good, he won't be taking targets down in one or two shots. Soldier 76 players should focus on chipping down an enemies health, but should not be upset if they don't get to finish the kill</p>
+				</div>
+				<div id="tracer" class="tab-pane fade">
+					<h1>Tracer</h1>
+					<p>Tracer is an Offense character who relies on speed to get in close to her enemies; kill them, then get away. Her main asset is her Blink skill, which lets her teleport around the map very quickly. In conjunction with Recall, she is able to Blink right next to someone, kill them, then Recall back to safety.</p>
+
+					<p>Her weakness is her low health. She is very fragile and even a couple shots from the weakest of characters can kill her. Tackling enemies head-on is usually not very effective, as she is better suited to sneak up on enemies. She can also be difficult to control, as constantly blinking around can make aiming difficult and might cause some people to lose track of where they are, or what's happening around them.</p>
+				</div>
+				<div id="sombra" class="tab-pane fade">
+					<h1>Sombra</h1>
+					<p>Stealth and debilitating attacks make Sombra a powerful infiltrator. Her hacking can disrupt her enemies, ensuring they're easier to take out, while her EMP provides the upper hand against multiple foes at once. Sombra’s ability to Translocate and camouflage herself makes her a hard target to pin down.</p>
+				</div>
+			</div>
+			
+		</div>
+		<div class="col-md-3 verticalLine">
+			<ul class="nav nav-pills">
+				<li class="dropdown active">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Deffense
+					<span class="caret"></span></a>
+					<ul class="dropdown-menu inactive">
+						<li class="active"><a data-toggle="pill" href="#bastion">Bastion</a></li>
+						<li><a data-toggle="pill" href="#hanzo">Hanzo</a></li>
+						<li><a data-toggle="pill" href="#junkrat">Junkrat</a></li> 
+						<li><a data-toggle="pill" href="#mei">Mei</a></li>
+						<li><a data-toggle="pill" href="#torbjorn">Torbjorn</a></li>
+						<li><a data-toggle="pill" href="#widowmaker">Widowmaker</a></li>
+					</ul>
+				</li>
+			</ul>
+			
+			<div class="tab-content">
+				<div id="bastion" class="tab-pane fade in active">
+					<h1>Bastion</h1>
+					<p>Bastion is a Defensive character who is designed to lock down an area with his turret form. He can dish out insane amounts of damage, but only while stationary, leaving him extremely vulnerable to attacks from behind.</p>
+
+					<p>He excels on maps and in areas where your enemies are limited to only a few entrances, or small hallways. His damage output while in Turret form is so high that even the strongest Tanks will crumble before him. However, due to being locked in place while being a turret, it's incredibly important to be aware of any openings beside, behind or above you. It only takes one sneaky player to wrap around behind you and blow you up before you can revert back to your walking form!</p>
+				</div>
+				<div id="hanzo" class="tab-pane fade">
+					<h1>Hanzo</h1>
+					<p>Hanzo is a Defensive hero, who uses his bow and arrow to strike at enemies from a long range. He excels at defense, where he can hunker down and stay hidden, covering a specific area with his rain of arrows.</p>
+
+					<p>Hanzo suffers in close quarters and fast combat. His arrows do little damage unless charged, meaning his shots must hit or else he is wasting precious seconds. This makes him a high skill cap character, who needs a steady hand to make the most use of him.</p>
+				</div>
+				<div id="junkrat" class="tab-pane fade">
+					<h1>Junkrat</h1>
+					<p>Junkrat is a Defense hero who specializes in area defense. He has various traps and bombs he can place, and an Ultimate ability that deploys a steerable tire bomb so powerful, it's basically guaranteed to kill anyone caught in its explosion.</p>
+
+					<p>The downside of Junkrat is that he isn't as good in straight 1 vs 1 combat. His grenade launcher has a low rate of fire, he has low health and isn't very mobile. He is best used defensively, and is less effective if played too offensively.</p>
+				</div>
+				<div id="mei" class="tab-pane fade">
+					<h1>Mei</h1>
+					<p>Mei is a Defense hero who utilizes ice and snow to hurt, slow and even freeze her opponents. Her main weapon slows and can freeze enemies in place, and her Ice Wall allows her to block off entire hallways and doors for several seconds at a time. Used in key areas, it can completely stall the advance of your enemies.</p>
+
+					<p>The downside to Mei is her slow speed and lack of meaningful damage. Her best option for hurting her foes is to freeze them solid, then shoot them with an icicle. However this relies on her not dying during the several seconds it takes for that person to freeze, which is sometimes asking too much.</p>
+				</div>
+				<div id="torbjorn" class="tab-pane fade">
+					<h1>Torbjorn</h1>
+					<p>Torbjörn is the truest form of a Defense character. His main skill is the Turret. He can place it anywhere, and it will vigilantly protect this location until destroyed. It does a lot of damage, has a good range, and a decent amount of health. As if that weren't enough, Torbjorn can also buff his allies with armor, and has a decent short range weapon.</p>
+
+					<p>Torbjorn's weakness is his reliance on his turret. Without it, he doesn't have many options, and if his turret isn't landing kills, then he will have no scrap limiting his usefulness even further. For this reason, it's crucial that your turret lives and gets kills or else your character will be far less effective than another character.</p>
+				</div>
+				<div id="widowmaker" class="tab-pane fade">
+					<h1>Widowmaker</h1>
+					<p>Widowmaker is a long range Defense character. She is a sniper, so expect to see her at the back of the map, picking people off with her powerful rifle. When fully charged, her Widow's Kiss rifle can one hit kill (headshot) nearly any character in the game. She is also able to climb to ledges most characters can't reach, allowing her to hide well from the enemies line of sight.</p>
+
+					<p>Her downside is her limited health, and poor mobility. Lining up a good shot means standing still, so anyone who is watching carefully will see her standing still. Players who wish to use Widowmaker need to be fast, and sneaky, to ensure they remain hidden from enemy sight when not firing their gun.</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3 verticalLine">
+			<ul class="nav nav-pills">
+				<li class="dropdown active">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Tank
+					<span class="caret"></span></a>
+					<ul class="dropdown-menu inactive">
+						<li class="active"><a data-toggle="pill" href="#dva">D.Va</a></li>
+						<li><a data-toggle="pill" href="#reinhardt">Reinhardt</a></li>
+						<li><a data-toggle="pill" href="#roadhog">Roadhog</a></li> 
+						<li><a data-toggle="pill" href="#orisa">Orisa</a></li> 
+						<li><a data-toggle="pill" href="#winston">Winston</a></li> 
+						<li><a data-toggle="pill" href="#zarya">Zarya</a></li> 
+					</ul>
+				</li>
+			</ul>
+			
+			<div class="tab-content">
+				<div id="dva" class="tab-pane fade in active">
+					<h1>D.Va</h1>
+					<p>D.Va is a Tank character with powerful short range weapons, and an Ultimate ability that can clear out an entire room in one blast.</p>
+
+					<p>As a Tank, D.Va has tons of health. What makes her unique is that upon death, D.Va will leap out of her mech and can run away. This makes her extra tough to kill, as you essentially must kill her twice. Her mech is also quite strong, with two Fusion Cannons that are basically infinite ammo shotguns, and a shield that blocks all incoming projectiles for a short time.</p>
+
+					<p>The downside to D.Va is her very short range, and poor mobility while attacking.</p>
+				</div>
+				<div id="reinhardt" class="tab-pane fade">
+					<h1>Reinhardt</h1>
+					<p>Reinhardt is a melee focused Tank. He has a huge hammer that not only deals good damage, but actually knocks targets around when hit. His most useful skill however is the massive shield he can deploy, that blocks all damage and can protect an entire team from countless bullets, rockets and explosions. Great at pushing an objective, or just being a nuisance, Reinhardt can fit in on almost any team.</p>
+
+					<p>The downside then, is his short range. He offers no meaningful way to hurt long range combatants, and his mobility is rather poor, making him a sitting duck when caught out in the open. Although strong, his skills require people to be stunned or not moving to connect properly</p>
+				</div>
+				<div id="roadhog" class="tab-pane fade">
+					<h1>Roadhog</h1>
+					<p>Roadhog is a Tank character with powerful close range capabilities. What makes him unique is his Chain Hook, which can pull enemies towards him. This is very powerful, as it yanks people out of position and towards you and your allies, virtually guaranteeing a kill. He also has a ton of health, and can sustain himself through his healing skill.</p>
+
+					<p>What Roadhog lacks is mobility and range. He isn't particularly fast, and his weapon can only be effective at close range, anything beyond that and he might as well not be shooting at all. Although a tank, he works better as a beefy assassin, and not someone who should be relied on to start massive team fights.</p>
+				</div>
+				<div id="orisa" class="tab-pane fade">
+					<h1>Orisa</h1>
+					<p>Orisa serves as the central anchor of her team, and defends her teammates from the frontline with a protective barrier. She can attack from long range, fortify her own defenses, launch graviton charges to slow and move enemies, and deploy a Supercharger to boost the damage output of multiple allies at once.</p>
+				</div>
+				<div id="winston" class="tab-pane fade">
+					<h1>Winston</h1>
+					<p>Winston is a Tank through and through. He has a ton of health and a shield that can be deployed to protect his allies. His main weapon is a close range Tesla Cannon, and he is able to leap to his enemies, smashing into them and slowing them down. He is great offensively and defensively, and is perhaps the best character in the game for leaping into the middle of a group of enemies and causing mayhem.</p>
+
+					<p>His downside is his range. He has no long range options, and must rely on leaping to distant targets to defeat them. He also has low mobility, again forcing him to rely on his Jump Pack to get into and out of bad situations. Although a strong character, he works best as a decoy, allowing the team to kill anyone who is distracted by Winston as he leaps around the map.</p>
+				</div>
+				<div id="zarya" class="tab-pane fade">
+					<h1>Zarya</h1>
+					<p>Zarya is a Tank who focuses heavily on defensive abilities. Her main weapon is a short range cannon, firing a continuous beam of energy. She can also project shields around either herself or an ally, that absorbs all incoming damage and makes her own weapon stronger. Finally, her ultimate allows her to trap several enemies at once, and can be used in combination with many other characters to guarantee many kills.</p>
+					
+					<p>Her downside is her lack of range, and mobility. She is a slow moving tank, with no options for closing distance or hitting long range targets. Of the various Tanks, she also has some of the more situational skills. Her barriers only last a few seconds, making them far less useful overall and more desirable during specific instances of combat. This makes Zarya a powerful, but situational character.</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<ul class="nav nav-pills">
+				<li class="dropdown active">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Support
+					<span class="caret"></span></a>
+					<ul class="dropdown-menu inactive">
+						<li class="active"><a data-toggle="pill" href="#ana">Ana</a></li>
+						<li><a data-toggle="pill" href="#lucio">Lucio</a></li>
+						<li><a data-toggle="pill" href="#mercy">Mercy</a></li>
+						<li><a data-toggle="pill" href="#symmetra">Symmetra</a></li> 
+						<li><a data-toggle="pill" href="#zenyatta">Zenyatta</a></li> 
+					</ul>
+				</li>
+			</ul>
+			
+			<div class="tab-content">
+				<div id="ana" class="tab-pane fade in active">
+					<h1>Ana</h1>
+					<p>Although she might look like a Defense character, Ana is in fact a support. Her large rifle can both heal and deal damage, and her other abilities are all focused around support actions, like boosting an allies damage or temporarily sleeping enemies. Unlike the other Support characters, Ana requires a precise shot or else your heals won't hit their target.</p>
+				</div>
+				<div id="lucio" class="tab-pane fade">
+					<h1>Lucio</h1>
+					<p>Lúcio is a Support character who specializes in area of effect abilities. He is fast, can heal the entire team at once, and has an Ultimate ability that can provide several hundred temporary hit points to the whole team. Due to his nimble nature and powerful abilities, he is well suited to both offensive and defensive play styles.</p>
+
+					<p>Lucio's one downfall is his overall weakness as a combatant. He can't dish out much damage, and his survivability relies heavily on his speed. If he is ever slowed or caught alone, he will die in just a few shots</p>
+				</div>
+				<div id="mercy" class="tab-pane fade">
+					<h1>Mercy</h1>
+					<p>Mercy is an angelic Support character who offers powerful heals and buffs to her team. Her main weapon can be switched from a strong heal beam that constantly heals one target, to a damage buff increasing the damage that target does. Her ultimate is a mass revive, allowing her to get the entire team back up to fight again in the middle of a huge brawl. Due to her great skills, Mercy is a great support to bring into combat, whether defensively or aggressively.</p>
+
+					<p>The downside to Mercy is the rather limited range on her heal, meaning she is often put into danger herself. Mercy players will need to be creative in order to stay alive, and should constantly be moving around and hiding behind cover when possible.</p>
+				</div>
+				<div id="symmetra" class="tab-pane fade">
+					<h1>Symmetra</h1>
+					<p>Symmetra is a Support character who focuses on mobility and defense, and not on healing her allies. Her skills allow her to lock down a specific location, making her great during defensive based maps. She can also buff allies with a small shield, and her ultimate allows people to immediately teleport from their respawn location back into battle.</p>
+
+					<p>The downside of Symmetra is that she cannot heal, and her shield is very weak. Unlike the other supports who have ways to heal or sustain the team, Symmetra has virtually none. This doesn't mean the character is bad, she just has a more specialized role on the team that needs to be considered when picking her.</p>
+				</div>
+				<div id="zenyatta" class="tab-pane fade">
+					<h1>Zenyatta</h1>
+					<p>Zenyatta is a Support character. He uses orbs as his primary weapon, which are highly accurate, but don't deal much damage. His orbs of Discord and Harmony allow him to heal allies and increase the damage done to targets, but only if he maintains vision of that person. Zenyatta's ultimate is very powerful, allowing for a few seconds of massive area of effect healing to be done.</p>
+
+					<p>The downsides of using Zenyatta is his reliance on vision of a target, and general lack of mobility. Zenyatta has no options to get away from an enemy and since his health is so low, it means that if someone finds you, you'll likely die. He also is forced to keep vision on his orb targets, which often places him in the thick of things, meaning you are reliant on your allies to keep you alive.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<p class="text-left">Gonda Dávid<br>BIXU0S</p>
+			</div>
+			<div class="col-md-4">
+			</div>
+			<div class="col-md-4">
+				<p class="text-right textsizer">
+					<button type="button" onclick="document.getElementById('body').style.fontSize='16px'">small</button>
+					<button type="button" onclick="document.getElementById('body').style.fontSize='18px'">normal</button>
+					<button type="button" onclick="document.getElementById('body').style.fontSize='20px'">big</button>
+				</p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+</body>
+</html>

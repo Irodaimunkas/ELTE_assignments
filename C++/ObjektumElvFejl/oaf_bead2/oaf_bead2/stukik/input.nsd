@@ -1,0 +1,137 @@
+1
+0
+1
+int e;
+1
+0
+1
+in >> e;
+9
+1
+Input error handling
+1
+(in.fail())
+0
+0
+0
+0
+1
+0
+1
+throw Bag::INT_INPUT_STRING;
+11
+11
+9
+0
+1
+(x._first == NULL || x._first->_val >= e)
+0
+0
+1
+Other cases
+0
+9
+1
+First node greater than input node
+1
+(x._first == NULL || x._first->_val > e)
+0
+0
+1
+First node equals input node
+0
+1
+0
+1
+bagElem *q = new bagElem;
+1
+0
+1
+q->_count = 1;
+1
+0
+1
+q->_val = e;
+1
+0
+1
+q->prev = NULL;
+1
+0
+1
+q->next = x._first;
+1
+0
+1
+x._first = q;
+11
+1
+0
+1
+x._first->_count++;
+11
+11
+1
+0
+1
+bagElem *p, *q;
+1
+0
+1
+p = x._first;
+1
+0
+1
+q = new bagElem;
+1
+0
+1
+q->_val = e;
+5
+1
+A pointer tries to find the input node in the list
+1
+(p->next != NULL && p->next->_val <= e)
+1
+0
+1
+p = p->next;
+11
+9
+1
+Input node exists in list
+1
+(p->_val == e)
+0
+0
+1
+Input node doesn't exist in list
+0
+1
+0
+1
+p->_count++;
+11
+1
+0
+1
+q->_count = 1;
+1
+0
+1
+q->next = p->next;
+1
+0
+1
+q->prev = p;
+1
+0
+1
+p->next = q;
+11
+11
+4
+0
+1
+in
+11
