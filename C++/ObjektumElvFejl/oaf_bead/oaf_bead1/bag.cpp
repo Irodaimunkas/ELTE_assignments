@@ -6,6 +6,7 @@ Zsák objektum készítése/Zsák metszete (8. feladat)
 
 #include <iostream>
 #include "bag.h"
+#include <string>
 
 // Konstruktor
 // Tevékenység:	A konstruktor létrehozza a zsak ertekeinek a dinamikus tombot (meret a dinamikus tombben allo adatokat jeloli, ami
