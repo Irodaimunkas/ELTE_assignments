@@ -2,6 +2,8 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Minesweeper.Model;
 using Minesweeper.Persistence;
+using Moq;
+using System.Threading.Tasks;
 
 namespace MinesweeperTest
 {
@@ -9,11 +11,15 @@ namespace MinesweeperTest
     public class MinesweeperTest
     {
         private MinesweeperModel _model;
-        private IMinesweeperDataAccess _dataAcces;
+        Mock<IMinesweeperDataAccess> _mock;
 
         [TestInitialize]
         public void Initialize()
         {
+            _mock = new Mock<IMinesweeperDataAccess>();
+            _mock.Setup(_mock => _mock.LoadAsync(It.IsAny<string>())).Returns(
+                Task.FromResult(new MinesweeperTable(6))
+            );
         }
     }
 }
