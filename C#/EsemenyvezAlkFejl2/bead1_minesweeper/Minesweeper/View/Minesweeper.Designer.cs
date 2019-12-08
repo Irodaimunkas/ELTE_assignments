@@ -29,121 +29,121 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Minesweeper));
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.newGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.easyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mediumToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.hardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.playerStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
-            this.saveGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.loadGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
-            this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
-            this.menuStrip1.SuspendLayout();
-            this.statusStrip1.SuspendLayout();
+            this._menuStrip = new System.Windows.Forms.MenuStrip();
+            this._newGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this._easyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this._mediumToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this._hardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this._saveGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this._loadGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this._statusStrip = new System.Windows.Forms.StatusStrip();
+            this._playerStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this._saveFileDialog = new System.Windows.Forms.SaveFileDialog();
+            this._openFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this._menuStrip.SuspendLayout();
+            this._statusStrip.SuspendLayout();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // _menuStrip
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.newGameToolStripMenuItem,
-            this.saveGameToolStripMenuItem,
-            this.loadGameToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(344, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            this._menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this._newGameToolStripMenuItem,
+            this._saveGameToolStripMenuItem,
+            this._loadGameToolStripMenuItem});
+            this._menuStrip.Location = new System.Drawing.Point(0, 0);
+            this._menuStrip.Name = "_menuStrip";
+            this._menuStrip.Size = new System.Drawing.Size(344, 24);
+            this._menuStrip.TabIndex = 0;
+            this._menuStrip.Text = "menuStrip1";
             // 
-            // newGameToolStripMenuItem
+            // _newGameToolStripMenuItem
             // 
-            this.newGameToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.easyToolStripMenuItem,
-            this.mediumToolStripMenuItem,
-            this.hardToolStripMenuItem});
-            this.newGameToolStripMenuItem.Name = "newGameToolStripMenuItem";
-            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
-            this.newGameToolStripMenuItem.Text = "New Game";
+            this._newGameToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this._easyToolStripMenuItem,
+            this._mediumToolStripMenuItem,
+            this._hardToolStripMenuItem});
+            this._newGameToolStripMenuItem.Name = "_newGameToolStripMenuItem";
+            this._newGameToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
+            this._newGameToolStripMenuItem.Text = "New Game";
             // 
-            // easyToolStripMenuItem
+            // _easyToolStripMenuItem
             // 
-            this.easyToolStripMenuItem.Name = "easyToolStripMenuItem";
-            this.easyToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.easyToolStripMenuItem.Text = "Easy";
-            this.easyToolStripMenuItem.Click += new System.EventHandler(this.EasyToolStripMenuItem_Click);
+            this._easyToolStripMenuItem.Name = "_easyToolStripMenuItem";
+            this._easyToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this._easyToolStripMenuItem.Text = "Easy";
+            this._easyToolStripMenuItem.Click += new System.EventHandler(this.EasyToolStripMenuItem_Click);
             // 
-            // mediumToolStripMenuItem
+            // _mediumToolStripMenuItem
             // 
-            this.mediumToolStripMenuItem.Name = "mediumToolStripMenuItem";
-            this.mediumToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.mediumToolStripMenuItem.Text = "Medium";
-            this.mediumToolStripMenuItem.Click += new System.EventHandler(this.MediumToolStripMenuItem_Click);
+            this._mediumToolStripMenuItem.Name = "_mediumToolStripMenuItem";
+            this._mediumToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this._mediumToolStripMenuItem.Text = "Medium";
+            this._mediumToolStripMenuItem.Click += new System.EventHandler(this.MediumToolStripMenuItem_Click);
             // 
-            // hardToolStripMenuItem
+            // _hardToolStripMenuItem
             // 
-            this.hardToolStripMenuItem.Name = "hardToolStripMenuItem";
-            this.hardToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.hardToolStripMenuItem.Text = "Hard";
-            this.hardToolStripMenuItem.Click += new System.EventHandler(this.HardToolStripMenuItem_Click);
+            this._hardToolStripMenuItem.Name = "_hardToolStripMenuItem";
+            this._hardToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this._hardToolStripMenuItem.Text = "Hard";
+            this._hardToolStripMenuItem.Click += new System.EventHandler(this.HardToolStripMenuItem_Click);
             // 
-            // statusStrip1
+            // _saveGameToolStripMenuItem
             // 
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.playerStatusLabel});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 299);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(344, 22);
-            this.statusStrip1.TabIndex = 1;
-            this.statusStrip1.Text = "statusStrip1";
+            this._saveGameToolStripMenuItem.Name = "_saveGameToolStripMenuItem";
+            this._saveGameToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
+            this._saveGameToolStripMenuItem.Text = "Save Game";
+            this._saveGameToolStripMenuItem.Click += new System.EventHandler(this.SaveGameToolStripMenuItem_Click);
             // 
-            // playerStatusLabel
+            // _loadGameToolStripMenuItem
             // 
-            this.playerStatusLabel.Name = "playerStatusLabel";
-            this.playerStatusLabel.Size = new System.Drawing.Size(118, 17);
-            this.playerStatusLabel.Text = "toolStripStatusLabel1";
-            this.playerStatusLabel.Visible = false;
+            this._loadGameToolStripMenuItem.Name = "_loadGameToolStripMenuItem";
+            this._loadGameToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
+            this._loadGameToolStripMenuItem.Text = "Load Game";
+            this._loadGameToolStripMenuItem.Click += new System.EventHandler(this.LoadGameToolStripMenuItem_Click);
             // 
-            // saveGameToolStripMenuItem
+            // _statusStrip
             // 
-            this.saveGameToolStripMenuItem.Name = "saveGameToolStripMenuItem";
-            this.saveGameToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
-            this.saveGameToolStripMenuItem.Text = "Save Game";
-            this.saveGameToolStripMenuItem.Click += new System.EventHandler(this.SaveGameToolStripMenuItem_Click);
+            this._statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this._playerStatusLabel});
+            this._statusStrip.Location = new System.Drawing.Point(0, 299);
+            this._statusStrip.Name = "_statusStrip";
+            this._statusStrip.Size = new System.Drawing.Size(344, 22);
+            this._statusStrip.TabIndex = 1;
+            this._statusStrip.Text = "statusStrip1";
             // 
-            // loadGameToolStripMenuItem
+            // _playerStatusLabel
             // 
-            this.loadGameToolStripMenuItem.Name = "loadGameToolStripMenuItem";
-            this.loadGameToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
-            this.loadGameToolStripMenuItem.Text = "Load Game";
-            this.loadGameToolStripMenuItem.Click += new System.EventHandler(this.LoadGameToolStripMenuItem_Click);
+            this._playerStatusLabel.Name = "_playerStatusLabel";
+            this._playerStatusLabel.Size = new System.Drawing.Size(118, 17);
+            this._playerStatusLabel.Text = "toolStripStatusLabel1";
+            this._playerStatusLabel.Visible = false;
             // 
-            // saveFileDialog
+            // _saveFileDialog
             // 
-            this.saveFileDialog.Filter = "Saved Game (*.save)|*.save";
-            this.saveFileDialog.Title = "Save Game";
+            this._saveFileDialog.Filter = "Saved Game (*.save)|*.save";
+            this._saveFileDialog.Title = "Save Game";
             // 
-            // openFileDialog
+            // _openFileDialog
             // 
-            this.openFileDialog.Filter = "Saved Game (*.save)|*.save";
-            this.openFileDialog.Title = "Load Game";
+            this._openFileDialog.Filter = "Saved Game (*.save)|*.save";
+            this._openFileDialog.Title = "Load Game";
             // 
             // Minesweeper
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(344, 321);
-            this.Controls.Add(this.statusStrip1);
-            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this._statusStrip);
+            this.Controls.Add(this._menuStrip);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MainMenuStrip = this.menuStrip1;
+            this.MainMenuStrip = this._menuStrip;
             this.Name = "Minesweeper";
             this.Text = "Minesweeper";
             this.Load += new System.EventHandler(this.Minesweeper_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
-            this.statusStrip1.ResumeLayout(false);
-            this.statusStrip1.PerformLayout();
+            this._menuStrip.ResumeLayout(false);
+            this._menuStrip.PerformLayout();
+            this._statusStrip.ResumeLayout(false);
+            this._statusStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -151,17 +151,17 @@
 
         #endregion
 
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem newGameToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem easyToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mediumToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem hardToolStripMenuItem;
-        private System.Windows.Forms.StatusStrip statusStrip1;
-        private System.Windows.Forms.ToolStripStatusLabel playerStatusLabel;
-        private System.Windows.Forms.ToolStripMenuItem saveGameToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem loadGameToolStripMenuItem;
-        private System.Windows.Forms.SaveFileDialog saveFileDialog;
-        private System.Windows.Forms.OpenFileDialog openFileDialog;
+        private System.Windows.Forms.MenuStrip _menuStrip;
+        private System.Windows.Forms.ToolStripMenuItem _newGameToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem _easyToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem _mediumToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem _hardToolStripMenuItem;
+        private System.Windows.Forms.StatusStrip _statusStrip;
+        private System.Windows.Forms.ToolStripStatusLabel _playerStatusLabel;
+        private System.Windows.Forms.ToolStripMenuItem _saveGameToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem _loadGameToolStripMenuItem;
+        private System.Windows.Forms.SaveFileDialog _saveFileDialog;
+        private System.Windows.Forms.OpenFileDialog _openFileDialog;
     }
 }
 

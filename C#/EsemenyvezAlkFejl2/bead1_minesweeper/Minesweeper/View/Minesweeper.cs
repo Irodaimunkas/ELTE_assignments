@@ -47,8 +47,8 @@ namespace Minesweeper
 
                     Controls.Add(_buttonGrid[i, j]);
                 }
-            playerStatusLabel.Text = "Current player: " + _model.CurrPlayer.ToString();
-            playerStatusLabel.Visible = true;
+            _playerStatusLabel.Text = "Current player: " + _model.CurrPlayer.ToString();
+            _playerStatusLabel.Visible = true;
         }
 
         private void UpdateTable()
@@ -130,7 +130,7 @@ namespace Minesweeper
                 _model.Step(x, y);
 
                 UpdateTable();
-                playerStatusLabel.Text = "Current player: " + _model.CurrPlayer.ToString();
+                _playerStatusLabel.Text = "Current player: " + _model.CurrPlayer.ToString();
             }
         }
 
@@ -158,17 +158,17 @@ namespace Minesweeper
 
         private async void SaveGameToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            if (_saveFileDialog.ShowDialog() == DialogResult.OK)
             {
-                await _model.SaveGameAsync(saveFileDialog.FileName);
+                await _model.SaveGameAsync(_saveFileDialog.FileName);
             }
         }
 
         private async void LoadGameToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            if (_openFileDialog.ShowDialog() == DialogResult.OK)
             {
-                await _model.LoadGameAsync(openFileDialog.FileName);
+                await _model.LoadGameAsync(_openFileDialog.FileName);
                 switch (_model.Size)
                 {
                     case 6:

@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Minesweeper.Model.MinesweeperEventArgs">
+    <Position X="13" Y="4.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Model\MinesweeperEventArgs.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_player" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Minesweeper.Model.MinesweeperModel">
+    <Position X="4" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>ABAAECAAgBAAggAAgEAAAAAAJCAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Model\MinesweeperModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_dataAccess" />
+      <Field Name="_gameTable" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Minesweeper.Persistence.MinesweeperFileDataAccess" BaseTypeListCollapsed="true">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Persistence\MinesweeperFileDataAccess.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Bottom" Position="0.203" />
+  </Class>
+  <Class Name="Minesweeper.Persistence.MinesweeperTable">
+    <Position X="7" Y="4.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAABAAgAAAAAAAAAAAAAAAAAAQAEAAAAIAAAA=</HashCode>
+      <FileName>Persistence\MinesweeperTable.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_map" />
+      <Field Name="_currPlayer" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Minesweeper.Minesweeper">
+    <Position X="0.5" Y="1.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>BQAAQAAAhCBJAAAAAkDIYIyCAACAAQAAJCAAAgAQAAE=</HashCode>
+      <FileName>View\Minesweeper.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_dataAccess" />
+      <Field Name="_model" />
+    </ShowAsAssociation>
+  </Class>
+  <Struct Name="Minesweeper.Persistence.Field">
+    <Position X="10.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAACAAAAAA=</HashCode>
+      <FileName>Persistence\MinesweeperTable.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="fieldType" />
+    </ShowAsAssociation>
+  </Struct>
+  <Interface Name="Minesweeper.Persistence.IMinesweeperDataAccess">
+    <Position X="4.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Persistence\IMinesweeperDataAccess.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Minesweeper.Persistence.Player">
+    <Position X="10.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAACAAAAA=</HashCode>
+      <FileName>Persistence\MinesweeperTable.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Minesweeper.Persistence.FieldType">
+    <Position X="10.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Persistence\MinesweeperTable.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
