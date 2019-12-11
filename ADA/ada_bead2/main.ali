@@ -16,7 +16,7 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 RV MAX_ENTRY_QUEUE_LENGTH=1+
 
-U main%b		main.adb		8af9351b NE OO SU
+U main%b		main.adb		dcfaef88 NE OO SU
 W ada%s			ada.ads			ada.ali
 Z ada.exceptions%s	a-except.adb		a-except.ali
 W ada.numerics%s	a-numeri.ads		a-numeri.ali
@@ -25,6 +25,7 @@ W ada.numerics.float_random%s  a-nuflra.adb	a-nuflra.ali
 Z ada.tags%s		a-tags.adb		a-tags.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 W system%s		system.ads		system.ali
+Z system.img_real%s	s-imgrea.adb		s-imgrea.ali
 Z system.random_numbers%s  s-rannum.adb		s-rannum.ali
 Z system.soft_links%s	s-soflin.adb		s-soflin.ali
 Z system.tasking%s	s-taskin.adb		s-taskin.ali
@@ -45,12 +46,13 @@ D interfac.ads		20190518041256 5ab55268 interfaces%s
 D i-c.ads		20190518041256 5421119b interfaces.c%s
 D i-cstrin.ads		20190518041256 341d0ddf interfaces.c.strings%s
 D i-cstrea.ads		20190518041256 e53d8b8e interfaces.c_streams%s
-D main.adb		20191211183754 15be16e3 main%b
+D main.adb		20191211190040 43bdcc70 main%b
 D system.ads		20190518041258 32a08138 system%s
 D s-atacco.ads		20190518041258 4c36d12f system.address_to_access_conversions%s
 D s-crtl.ads		20190518041256 0ebbdb71 system.crtl%s
 D s-exctab.ads		20190518041256 54135002 system.exception_table%s
 D s-ficobl.ads		20190518041258 078245e4 system.file_control_block%s
+D s-imgrea.ads		20190518041256 c7a851e2 system.img_real%s
 D s-imguns.ads		20190518041256 9ff43cf7 system.img_uns%s
 D s-multip.ads		20190518041256 38ac9f73 system.multiprocessors%s
 D s-osinte.ads		20190518041258 97504df8 system.os_interface%s
@@ -76,29 +78,30 @@ D s-win32.ads		20190518041256 90ecf4e6 system.win32%s
 G a e
 G c Z b b [main standard 3 11 none]
 X 1 ada.ads
-16K9*Ada 20e8 16|1r6 1r19 1r49 25r37 43r20 46r13 47r31
+16K9*Ada 20e8 16|1r6 1r19 1r49 25r37 43r20 46r13 47r37 49r13
 X 4 a-numeri.ads
-16K13*Numerics 32e17 16|1r23 1r53 25r41 43r24 46r17 47r35
+16K13*Numerics 32e17 16|1r23 1r53 25r41 43r24 46r17 47r41
 X 5 a-nudira.ads
 44k22*Discrete_Random 75e33 16|1w32 25r50
-50R9 Generator<26|63R9> 16|26r29[25]
+50R9 Generator<27|63R9> 16|26r29[25]
 52V13 Random{16|24I18} 16|30s29[25]
-55U14 Reset<26|100p14> 16|29s22[25]
+55U14 Reset<27|100p14> 16|29s22[25]
 X 6 a-nudira.adb
-53V16 Random[26|83]{16|24I18} 27|392b13[16|25]
+53V16 Random[27|83]{16|24I18} 28|392b13[16|25]
 X 7 a-nuflra.ads
-41K22*Float_Random 74e30 16|1w62 43r33 46r26 47r44
-47R9*Generator<26|63R9> 16|43r46
+41K22*Float_Random 74e30 16|1w62 43r33 46r26 47r50
+47R9*Generator<27|63R9> 16|43r46
 49F12*Uniformly_Distributed{float}
-51V13*Random{49F12}<26|71p13> 16|47s57
-53U14*Reset<26|100p14> 16|46s39
+51V13*Random{49F12}<27|71p13> 16|47s63
+53U14*Reset<27|100p14> 16|46s39
 X 10 a-textio.ads
-57K13*Text_IO 727e16 16|1w10
+57K13*Text_IO 727e16 16|1w10 49r17
+508U14*Put_Line 16|49s25
 X 12 interfac.ads
 74M9*Unsigned_32
 77M9*Unsigned_64
 X 16 main.adb
-3U11*Main 3b11 61l5 61t9
+3U11*Main 3b11 65l5 65t9
 4f5 Min_Wait_Time{float}
 5f5 Max_Wait_Time{float}
 6f5 Min_Serve_Time{float}
@@ -107,28 +110,29 @@ X 16 main.adb
 9f5 Max_Order_Time{float}
 10i5 Number_of_Waiters{integer}
 11i5 Number_of_Guests{integer}
-13E10 Pizza_Types 13e51 18r46 23r46 31r22 58r12
+13E10 Pizza_Types 13e51 18r46 23r46 31r22 60r12
 13n26 Hawaii{13E10}
 13n34 Pepperoni{13E10}
 13n45 Vegan{13E10}
-17w15 Safe_Random 21b20 34l9 34t20 60r5
-18U19 Generate_Pizza 18<34 23b19 32l13 32t27 60s17
+17w15 Safe_Random 21b20 34l9 34t20 63r5
+18U19 Generate_Pizza 18<34 23b19 32l13 32t27 63s17
 18e34 Input{13E10} 23b34 31m13
 24I18 Rand_Range<short_short_integer> 25r66 27r19
 25K21 Rand_Int[5|44] 26r20 29r13 30r20
 26r13 Seed{5|50R9[25]} 29r28 30r36
 27i13 Num{24I18} 30m13 31r38
-36w15 Random_Duration 40b20 49l9 49t24
-37U19 Get_Duration 37<32 41b19 48l13 48t25
-37o32 Input{duration} 41b32 47m13
-42F18 Rand_Range<float> 44r19
-43r13 Seed{7|47R9} 46r45 47r64
-44f13 Num{42F18}
-58e5 Aasd{13E10} 60m32
-X 26 s-rannum.ads
-75V13*Random{12|74M9} 27|221i21
-76V13*Random{12|77M9} 27|221i21
-X 32 s-stausa.ads
+36w15 Random_Duration 40b20 51l9 51t24 64r5
+37U19 Get_Duration 37<32 41b19 50l13 50t25 64s21
+37o32 Input{duration} 41b32 48m13
+42F18 Rand_Range<float> 44r19 47r26
+43r13 Seed{7|47R9} 46r45 47r70
+44f13 Num{42F18} 47m13 48r31 49r34
+60e5 Aasd{13E10} 63m32
+61o5 Asd{duration} 64m34
+X 27 s-rannum.ads
+75V13*Random{12|74M9} 28|221i21
+76V13*Random{12|77M9} 28|221i21
+X 33 s-stausa.ads
 203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
 268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
 

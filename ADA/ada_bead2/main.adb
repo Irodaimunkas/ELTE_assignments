@@ -41,9 +41,12 @@ procedure Main is
         procedure Get_Duration(Input : out Duration) is
             type Rand_Range is new Float range 0.0..5.0;
             Seed : Ada.Numerics.Float_Random.Generator;
+            Num : Rand_Range;
         begin
             Ada.Numerics.Float_Random.Reset(Seed);
-            Input := Duration(Ada.Numerics.Float_Random.Random(Seed));
+            Num := 5.0 * Rand_Range(Ada.Numerics.Float_Random.Random(Seed));
+            Input := Duration(Num);
+            Ada.Text_IO.Put_Line(Num'Image);
         end Get_Duration;
     end Random_Duration;
 
@@ -55,6 +58,8 @@ procedure Main is
 --guests
 
     Aasd : Pizza_Types;
+    Asd : Duration;
 begin
     Safe_Random.Generate_Pizza(Aasd);
+    Random_Duration.Get_Duration(Asd);
 end Main;
