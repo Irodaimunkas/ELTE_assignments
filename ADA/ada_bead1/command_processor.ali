@@ -1,0 +1,142 @@
+V "GNAT Lib v2019"
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_IO
+RV NO_NESTED_FINALIZATION
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV SPARK_05
+
+U command_processor%b	command_processor.adb	db3288cc NE OO PK GE
+
+U command_processor%s	command_processor.ads	669f2ced BN EE NE OO PK GE
+W ada%s			ada.ads			ada.ali
+W ada.characters%s	a-charac.ads		a-charac.ali
+Z ada.characters.latin_1%s  a-chlat1.ads	a-chlat1.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.fixed%s	a-strfix.adb		a-strfix.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W file_system%s		file_system.adb		file_system.ali
+
+D ada.ads		20190518041256 76789da1 ada%s
+D a-charac.ads		20190518041256 2d3ec45b ada.characters%s
+D a-chlat1.ads		20190518041256 66457d31 ada.characters.latin_1%s
+D a-except.ads		20190518041256 291912d5 ada.exceptions%s
+D a-finali.ads		20190518041256 bf4f806b ada.finalization%s
+D a-ioexce.ads		20190518041256 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20190518041256 119b8fb3 ada.streams%s
+D a-string.ads		20190518041256 90ac6797 ada.strings%s
+D a-strfix.ads		20190518041258 86d6bc21 ada.strings.fixed%s
+D a-strmap.ads		20190518041256 e8bb714a ada.strings.maps%s
+D a-strunb.ads		20190518041256 1656705b ada.strings.unbounded%s
+D a-tags.ads		20190518041258 491b781d ada.tags%s
+D a-textio.ads		20190518041258 aef4d56d ada.text_io%s
+D a-unccon.ads		20190518041256 0e9b276f ada.unchecked_conversion%s
+D command_processor.ads	20191101155804 90a15ae2 command_processor%s
+D command_processor.adb	20191102002956 4b93d22e command_processor%b
+D file_system.ads	20191102145904 c84a6f18 file_system%s
+D file_system.adb	20191102151144 28716f81 file_system%b
+D interfac.ads		20190518041256 5ab55268 interfaces%s
+D i-cstrea.ads		20190518041256 e53d8b8e interfaces.c_streams%s
+D system.ads		20190518041258 32a08138 system%s
+D s-atocou.ads		20190518041258 b45c2d8d system.atomic_counters%s
+D s-crtl.ads		20190518041256 0ebbdb71 system.crtl%s
+D s-exctab.ads		20190518041256 54135002 system.exception_table%s
+D s-ficobl.ads		20190518041258 078245e4 system.file_control_block%s
+D s-finmas.ads		20190518041256 7811a767 system.finalization_masters%s
+D s-finroo.ads		20190518041258 4ff27390 system.finalization_root%s
+D s-parame.ads		20190518041258 48ec542b system.parameters%s
+D s-secsta.ads		20190518041258 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041256 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041258 a37c21ec system.stack_checking%s
+D s-stalib.ads		20190518041258 09bd3940 system.standard_library%s
+D s-stoele.ads		20190518041258 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20190518041256 b16154c2 system.storage_pools%s
+D s-stposu.ads		20190518041256 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20190518041256 aedef97e system.stream_attributes%s
+D s-traent.ads		20190518041256 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041256 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20190518041256 1b7d22d2 system.wch_con%s
+G a e
+G c Z s b [command_processor standard 12 9 none]
+X 1 ada.ads
+16K9*Ada 20e8 15|1r19 1r32 1r55 2r5 2r18 2r41 21r28 22r27
+X 8 a-string.ads
+16K13*Strings 35e16 15|1r36 1r59 2r22 2r45
+X 9 a-strfix.ads
+43K21*Fixed 596e22 15|1w67 2r53
+X 11 a-strunb.ads
+82K21*Unbounded 756e26 15|1w44 2r30
+87R9*Unbounded_String<5|43R9> 739e14 15|16r69 16|3r69 20r34 56r17
+103V13*To_Unbounded_String{87R9} 16|11s27 15s23 16s23 60s22
+116V13*To_String{string} 16|25s12 27s15 29s15 31s15 33s15 35s15 37s15 39s15
+. 44s43 45s40 48s43 49s41 50s42 62s29 64s23
+X 13 a-textio.ads
+57K13*Text_IO 727e16 15|1w23 2r9 21r32 22r31
+454U14*Get 15|22r39
+495V13*Get_Line{string} 16|60s42
+508U14*Put_Line 15|21r40
+X 15 command_processor.ads
+6i5 Max_File_Size{integer} 19r22
+7i5 Max_Directory_Size{integer} 20r27
+9U20 Standard_Output 9>36
+9a36 Output{string}
+10U20 Standard_Input 10<35
+10a35 Input{string}
+12k9*Command_Processor 6z5 7z5 9z20 10z20 27E10 37l5 37e22 16|1b14 111l5
+. 111t22
+14U15*Process_Command 14>32 16|19b15 53l9 53t24 62s13
+14a32 Full_Command{string} 16|19b32 23r15
+15U15*Run_Terminal 16|55b15 66l9 66t21
+16U15*Split 16>21 16<40 16<52 16|3b15 17l9 17t14 23s9
+16a21 Input{string} 16|3b21 6r15 6r52 10r22 11r47 11r53 15r43 15r49 16r43
+. 16r64
+16r40 Output_One{11|87R9} 16|3b40 11m13 15m9
+16r52 Output_Two{11|87R9} 16|3b52 16m9
+18K13*My_File_System[17|11] 16|58r9 71r9 77r9 83r9 89r9 95r8 101r9 108r9
+27E10 Commands 27e71 16|21r19
+27n24 Mkdir{27E10} 16|26r24 44r18
+27n31 Cd{27E10} 16|28r24 45r18
+27n35 Pwd{27E10} 16|30r24 46r18
+27n40 Ls{27E10} 16|32r24 47r18
+27n44 Touch{27E10} 16|34r24 48r18
+27n51 Cat{27E10} 16|36r24 49r18
+27n56 Echo{27E10} 16|38r24 50r18
+27n62 Exit_Cmd{27E10} 16|21r31 40r24 51r18
+29U15 Command_Mkdir 29>30 16|44s29 68b15 72l9 72t22
+29a30 Arguments{string} 16|68b30 71r30
+30U15 Command_Cd 30>27 16|45s29 74b15 78l9 78t19
+30a27 Arguments{string} 16|74b27 77r27
+31U15 Command_Pwd 16|46s29 80b15 84l9 84t20
+32U15 Command_Ls 16|47s29 86b15 90l9 90t19
+33U15 Command_Touch 33>30 16|48s29 92b15 96l9 96t22
+33a30 Arguments{string} 16|92b30 95r29
+34U15 Command_Cat 34>28 16|49s29 98b15 102l9 102t20
+34a28 Arguments{string} 16|98b28 101r28
+35U15 Command_Echo 35>29 16|50s29 104b15 109l9 109t21
+35a29 Arguments{string} 16|104b29 108r29
+X 16 command_processor.adb
+4i9 Counter{integer} 6r21 6r41 7m13 7r24 10r12 11r68 15r64 16r49
+20r9 Output_One{11|87R9} 23m29 25r22 27r25 29r25 31r25 33r25 35r25 37r25
+. 39r25
+20r21 Output_Two{11|87R9} 23m41 44r53 45r50 48r53 49r51 50r52
+21e9 Command{15|27E10} 26m13 28m13 30m13 32m13 34m13 36m13 38m13 40m13 43r14
+56r9 Input{11|87R9} 60m13 62r39 64r33
+X 17 file_system.ads
+6i5 File_Size{integer} 15|19r9
+7i5 Directory_Size{integer} 15|20r9
+8U20 Standard_Output 15|21r9
+9U20 Standard_Input 15|22r9
+11k9*File_System 15|1w6 18r35 17|48e16
+13U15 Initialize 16|58s24[15|18]
+14U15 Mkdir 16|71s24[15|18]
+15U15 Cd 16|77s24[15|18]
+16U15 Pwd 16|83s24[15|18]
+17U15 Ls 16|89s24[15|18]
+18U15 Touch 16|95s23[15|18]
+19U15 Cat 16|101s24[15|18]
+20U15 Echo 16|108s24[15|18]
+
