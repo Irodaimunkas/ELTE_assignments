@@ -35,7 +35,7 @@ RV MAX_TASK_ENTRIES=1
 RV MAX_TASKS=1+
 RV MAX_ENTRY_QUEUE_LENGTH=1+
 
-U main%b		main.adb		cd809678 NE OO SU
+U main%b		main.adb		257171b0 NE OO SU
 W ada%s			ada.ads			ada.ali
 Z ada.calendar.delays%s	a-caldel.adb		a-caldel.ali
 Z ada.exceptions%s	a-except.adb		a-except.ali
@@ -83,11 +83,11 @@ D interfac.ads		20190518041256 5ab55268 interfaces%s
 D i-c.ads		20190518041256 5421119b interfaces.c%s
 D i-cstrin.ads		20190518041256 341d0ddf interfaces.c.strings%s
 D i-cstrea.ads		20190518041256 e53d8b8e interfaces.c_streams%s
-D main.adb		20191212222450 9a9ccda9 main%b
+D main.adb		20191212223732 d9d4653e main%b
 D main-guest.adb	20191212222456 6f9e3874 main.guest
-D main-pizzeria.adb	20191212220506 8855d67a main.pizzeria
-D main-safe_random.adb	20191212215032 e4e7316b main.safe_random
-D main-waiter.adb	20191212222240 cb77a74c main.waiter
+D main-pizzeria.adb	20191212223002 2328b733 main.pizzeria
+D main-safe_random.adb	20191212223716 bcedcc74 main.safe_random
+D main-waiter.adb	20191212223806 93b97445 main.waiter
 D system.ads		20190518041258 32a08138 system%s
 D s-atacco.ads		20190518041258 4c36d12f system.address_to_access_conversions%s
 D s-conca2.ads		20190518041256 02a0d7d0 system.concat_2%s
@@ -130,10 +130,10 @@ D s-win32.ads		20190518041256 90ecf4e6 system.win32%s
 G a e
 G c Z b b [main standard 3 11 none]
 X 1 ada.ads
-16K9*Ada 20e8 20|1r6 1r19 1r49 28r20 31r13 32r37 21|11r9 14r13 17r13 21r9
-. 23|6r33
+16K9*Ada 20e8 20|1r6 1r19 1r49 21|11r9 14r13 17r13 21r9 23|6r33 17r16 20r9
+. 21r33
 X 7 a-numeri.ads
-16K13*Numerics 32e17 20|1r23 1r53 28r24 31r17 32r41 23|6r37
+16K13*Numerics 32e17 20|1r23 1r53 23|6r37 17r20 20r13 21r37
 X 8 a-nudira.ads
 44k22*Discrete_Random 75e33 20|1w32 23|6r46
 50R9 Generator<40|63R9> 23|7r25[6]
@@ -142,11 +142,11 @@ X 8 a-nudira.ads
 X 9 a-nudira.adb
 53V16 Random[40|83]{23|5I14} 41|392b13[23|6]
 X 10 a-nuflra.ads
-41K22*Float_Random 74e30 20|1w62 28r33 31r26 32r50
-47R9*Generator<40|63R9> 20|28r46
+41K22*Float_Random 74e30 20|1w62 23|17r29 20r22 21r46
+47R9*Generator<40|63R9> 23|17r42
 49F12*Uniformly_Distributed{float}
-51V13*Random{49F12}<40|71p13> 20|32s63
-53U14*Reset<40|100p14> 20|31s39
+51V13*Random{49F12}<40|71p13> 23|21s59
+53U14*Reset<40|100p14> 23|20s35
 X 14 a-textio.ads
 57K13*Text_IO 727e16 20|1w10 21|11r13 14r17 17r17 21r13
 508U14*Put_Line 21|11s21 14s25 17s25 21s21
@@ -154,76 +154,76 @@ X 16 interfac.ads
 74M9*Unsigned_32
 77M9*Unsigned_64
 X 20 main.adb
-3U11*Main 3b11 78l5 78t9 21|1r10 22|1r10 23|1r10 24|1r10
+3U11*Main 3b11 63l5 63t9 21|1r10 22|1r10 23|1r10 24|1r10
 4o5 Min_Wait_Time{duration}
 5o5 Max_Wait_Time{duration} 21|20r15
 6o5 Min_Serve_Time{duration}
 7o5 Max_Serve_Time{duration}
 8o5 Min_Order_Time{duration}
 9o5 Max_Order_Time{duration}
-10i5 Number_of_Waiters{integer} 40r43 42r36 22|5r21 31r28
-11i5 Number_of_Guests{integer} 50r35 22|22r28
-13E10 Pizza_Types 13e51 16r46 38r31 21|3r13 23|4r42 12r18 24|7r32
+10i5 Number_of_Waiters{integer} 25r43 27r36 22|5r21 32r28
+11i5 Number_of_Guests{integer} 35r35 22|23r28
+13E10 Pizza_Types 13e51 16r46 23r31 21|3r13 23|4r42 12r18 24|7r32
 13n26 Hawaii{13E10}
 13n34 Pepperoni{13E10}
 13n45 Vegan{13E10}
-15w15 Safe_Random 19b20 21|8r5 23|2b16 15l5 15t16
+15w15 Safe_Random 20b20 21|8r5 23|2b16 25l5 25t16 24|8r13 10r13 11r13
 16U19 Generate_Pizza 16<34 21|8s17 23|4b15 13l9 13t23
 16e34 Input{13E10} 23|4b30 12m9
-21w15 Random_Duration 25b20 35l9 35t24 24|8r13 10r13 11r13
-22U19 Get_Duration 22<32 26b19 34l13 34t25 24|8s29 10s29 11s29
-22o32 Input{duration} 26b32 33m13
-27F18 Rand_Range<float> 29r19 32r26
-28r13 Seed{10|47R9} 31r45 32r70
-29f13 Num{27F18} 32m13 33r31
-37T15 Waiter 37d22 39l9 39e15 41r34 70b15 22|6r34 24|2b11 14l5 14t11
-37i22 ID{integer}
-38Y15 Order 38>21 38>44 38<64 21|10s16 24|7b16 12l13 12t18
-38e21 Food{13E10}
-38i44 Table{integer}
-38o64 Dur{duration} 24|10m42 10r42
-40A10 Waiter_Boolean_Array(boolean)<integer> 60r31
-41P10 Waiter_Access(37T15) 42r58 55r43 21|5r14 22|30r39
-42A10 Waiter_Array(41P10)<integer> 59r22
-44P10 String_Access(string) 46r28 22|23r22
-46T15 Guest 46d21 46d43 48l9 48e14 49r33 68b15 21|2b11 23l5 23t10 22|27r39
-46p21 Name{44P10}
-46i43 Table{integer} 21|10r29 11r30 14r34 17r34 21r30
-47Y15 Serve 21|13b20
-49P10 Guest_Access(46T15) 50r56 56r52 22|11r48
-50A10 Guest_Array(49P10)<integer> 61r21
-52w15 Pizzeria 66b20 72r5 73r5 74r5 75r5 76r5 77r5 21|7r5 22|2b16 37l5 37t13
-53U19 Open 72s14 22|3b15 9l9 9t13
-54Y15 New_Guest 54>25 73s14 74s14 75s14 76s14 77s14 22|21b11 28l9 28t18
-54a25 Input{string} 22|23r50 25r27
-55Y15 Get_Waiter 55<26 21|7s14 22|30b11 36l9 36t19
-55p26 Waiter_Acc{41P10} 22|33m9
-56V18 Get_Guest{49P10} 56>28 22|11b14 14l9 14t18
-56i28 Table{integer} 22|11b24 13r26
-57U19 Waiter_Ready 57>32 22|16b15 19l9 19t21
-57i32 ID{integer} 22|16b28 18r29
-59a9 Waiter_Arr{42A10} 22|6r13 33r23
-60a9 Waiter_Availability{40A10} 22|7r13 18r9 34r9
-61a9 Guest_Arr{50A10} 22|13r16 27r9
-62i9 Busy_Waiter{integer} 22|31r14 33r34 34r29 35r9 35r24
-63i9 Curr_Guests{integer} 22|22r14 26r9 26r24 27r19 27r57
+17U19 Get_Duration 17<32 23|15b15 23l9 23t21 24|8s25 10s25 11s25
+17o32 Input{duration} 23|15b28 22m9
+22T15 Waiter 22d22 24l9 24e15 26r34 55b15 22|6r34 24|2b11 17l5 17t11
+22i22 ID{integer} 24|14r35
+23Y15 Order 23>21 23>44 23<64 21|10s16 24|7b16 15l13 15t18
+23e21 Food{13E10}
+23i44 Table{integer}
+23o64 Dur{duration} 24|10m38 10r38
+25A10 Waiter_Boolean_Array(boolean)<integer> 45r31
+26P10 Waiter_Access(22T15) 27r58 40r43 21|5r14 22|31r39
+27A10 Waiter_Array(26P10)<integer> 44r22
+29P10 String_Access(string) 31r28 22|24r22
+31T15 Guest 31d21 31d43 33l9 33e14 34r33 53b15 21|2b11 23l5 23t10 22|28r39
+31p21 Name{29P10}
+31i43 Table{integer} 21|10r29 11r30 14r34 17r34 21r30
+32Y15 Serve 21|13b20
+34P10 Guest_Access(31T15) 35r56 41r52 22|11r48
+35A10 Guest_Array(34P10)<integer> 46r21
+37w15 Pizzeria 51b20 57r5 58r5 59r5 60r5 61r5 62r5 21|7r5 22|2b16 38l5 38t13
+. 24|14r13
+38U19 Open 57s14 22|3b15 9l9 9t13
+39Y15 New_Guest 39>25 58s14 59s14 60s14 61s14 62s14 22|22b11 29l9 29t18
+39a25 Input{string} 22|24r50 26r27
+40Y15 Get_Waiter 40<26 21|7s14 22|31b11 37l9 37t19
+40p26 Waiter_Acc{26P10} 22|34m9
+41V18 Get_Guest{34P10} 41>28 22|11b14 14l9 14t18
+41i28 Table{integer} 22|11b24 13r26
+42U19 Waiter_Ready 42>32 22|16b15 20l9 20t21 24|14s22
+42i32 ID{integer} 22|16b28 18r29
+44a9 Waiter_Arr{27A10} 22|6r13 34r23
+45a9 Waiter_Availability{25A10} 22|7r13 18r9 35r9
+46a9 Guest_Arr{35A10} 22|13r16 28r9
+47i9 Busy_Waiter{integer} 22|19r9 19r24 32r14 34r34 35r29 36r9 36r24
+48i9 Curr_Guests{integer} 22|23r14 27r9 27r24 28r19 28r57
 X 21 main-guest.adb
 3e5 Order{20|13E10} 8m32 10r22 11r58
 4o5 Dur{duration} 10m36 16r19
-5p5 Waiter{20|41P10} 7m25 7r25 10r9
+5p5 Waiter{20|26P10} 7m25 7r25 10r9
 X 22 main-pizzeria.adb
 5i13 I{integer} 6r24 6r41 7r33
-21a21 Input{string}
-23p9 String_Acc{20|44P10} 25r9 27r45
-30p22 Waiter_Acc{20|41P10}
+22a21 Input{string}
+24p9 String_Acc{20|29P10} 26r9 28r45
+31p22 Waiter_Acc{20|26P10}
 X 23 main-safe_random.adb
 5I14 Rand_Range<short_short_integer> 6r62 8r15
 6K17 Rand_Int[8|44] 7r16 10r9 11r16
 7r9 Seed{8|50R9[6]} 10r24 11r32
 8i9 Num{5I14} 11m9 12r34
+16F14 Rand_Range<float> 18r15 21r22
+17r9 Seed{10|47R9} 20r41 21r66
+18f9 Num{16F14} 21m9 22r27
 X 24 main-waiter.adb
-3o5 Order_Time{duration} 8m42 9r19
-4o5 Serve_Time{duration} 11m42
+3o5 Order_Time{duration} 8m38 9r19
+4o5 Serve_Time{duration} 11m38 12r19
 7e22 Food{20|13E10}
 7i45 Table{integer}
 7o65 Dur{duration}

@@ -14,25 +14,10 @@ procedure Main is
 
     protected Safe_Random is
         procedure Generate_Pizza(Input : out Pizza_Types);
+        procedure Get_Duration(Input : out Duration);
     end Safe_Random;
 
     protected body Safe_Random is separate;
-
-    protected Random_Duration is
-        procedure Get_Duration(Input : out Duration);
-    end Random_Duration;
-
-    protected body Random_Duration is
-        procedure Get_Duration(Input : out Duration) is
-            type Rand_Range is new Float range 0.0..5.0;
-            Seed : Ada.Numerics.Float_Random.Generator;
-            Num : Rand_Range;
-        begin
-            Ada.Numerics.Float_Random.Reset(Seed);
-            Num := 5.0 * Rand_Range(Ada.Numerics.Float_Random.Random(Seed));
-            Input := Duration(Num);
-        end Get_Duration;
-    end Random_Duration;
 
     task type Waiter(ID : Integer) is
         entry Order(Food : in Pizza_Types; Table : in Integer; Dur : out Duration);

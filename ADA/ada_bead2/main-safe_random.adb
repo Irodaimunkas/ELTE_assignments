@@ -12,4 +12,14 @@ protected body Safe_Random is
         Input := Pizza_Types'Val(Num);
     end Generate_Pizza;
 
+    procedure Get_Duration(Input : out Duration) is
+        type Rand_Range is new Float range 0.0..5.0;
+        Seed : Ada.Numerics.Float_Random.Generator;
+        Num : Rand_Range;
+    begin
+        Ada.Numerics.Float_Random.Reset(Seed);
+        Num := 5.0 * Rand_Range(Ada.Numerics.Float_Random.Random(Seed));
+        Input := Duration(Num);
+    end Get_Duration;
+
 end Safe_Random;

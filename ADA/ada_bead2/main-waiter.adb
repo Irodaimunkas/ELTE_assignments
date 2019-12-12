@@ -5,10 +5,13 @@ task body Waiter is
 begin
     loop
         accept Order(Food : in Pizza_Types; Table : in Integer; Dur : out Duration) do
-            Random_Duration.Get_Duration(Order_Time);
+            Safe_Random.Get_Duration(Order_Time);
             delay Order_Time;
-            Random_Duration.Get_Duration(Dur);
-            Random_Duration.Get_Duration(Serve_Time);
+            Safe_Random.Get_Duration(Dur);
+            Safe_Random.Get_Duration(Serve_Time);
+            delay Serve_Time;
+            --plate thingie
+            Pizzeria.Waiter_Ready(ID);
         end Order;
     end loop;
 end Waiter;

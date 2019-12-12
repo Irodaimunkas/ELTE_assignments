@@ -16,6 +16,7 @@ protected body Pizzeria is
     procedure Waiter_Ready(ID : Integer) is
     begin
         Waiter_Availability(ID) := True;
+        Busy_Waiter := Busy_Waiter - 1;
     end Waiter_Ready;
 
     entry New_Guest(Input : String)
