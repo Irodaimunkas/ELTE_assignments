@@ -14,6 +14,7 @@ begin
                 Safe_Random.Get_Duration(Dur);
             end Order;
         end select;
+        
         Safe_Random.Get_Duration(Serve_Time);
         delay Serve_Time;
         Plate_To_Serve_Acc := new Plate(Plate_To_Serve_Int);
