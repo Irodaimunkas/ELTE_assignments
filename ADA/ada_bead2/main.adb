@@ -55,9 +55,7 @@ procedure Main is
     task body Waiter is separate;
 begin
     Pizzeria.Open;
-    Pizzeria.New_Guest("1");
-    Pizzeria.New_Guest("2");
-    Pizzeria.New_Guest("3");
-    Pizzeria.New_Guest("4");
-    Pizzeria.New_Guest("5");
+    for I in 1..Number_of_Guests loop
+        Pizzeria.New_Guest(I'Image);
+    end loop;
 end Main;

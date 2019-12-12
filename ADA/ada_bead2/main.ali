@@ -35,7 +35,7 @@ RV MAX_TASK_ENTRIES=1
 RV MAX_TASKS=1+
 RV MAX_ENTRY_QUEUE_LENGTH=1+
 
-U main%b		main.adb		257171b0 NE OO SU
+U main%b		main.adb		6afe08ec NE OO SU
 W ada%s			ada.ads			ada.ali
 Z ada.calendar.delays%s	a-caldel.adb		a-caldel.ali
 Z ada.exceptions%s	a-except.adb		a-except.ali
@@ -83,11 +83,11 @@ D interfac.ads		20190518041256 5ab55268 interfaces%s
 D i-c.ads		20190518041256 5421119b interfaces.c%s
 D i-cstrin.ads		20190518041256 341d0ddf interfaces.c.strings%s
 D i-cstrea.ads		20190518041256 e53d8b8e interfaces.c_streams%s
-D main.adb		20191212223732 d9d4653e main%b
+D main.adb		20191212224312 965b1c62 main%b
 D main-guest.adb	20191212222456 6f9e3874 main.guest
 D main-pizzeria.adb	20191212223002 2328b733 main.pizzeria
 D main-safe_random.adb	20191212223716 bcedcc74 main.safe_random
-D main-waiter.adb	20191212223806 93b97445 main.waiter
+D main-waiter.adb	20191212224034 93b97445 main.waiter
 D system.ads		20190518041258 32a08138 system%s
 D s-atacco.ads		20190518041258 4c36d12f system.address_to_access_conversions%s
 D s-conca2.ads		20190518041256 02a0d7d0 system.concat_2%s
@@ -154,7 +154,7 @@ X 16 interfac.ads
 74M9*Unsigned_32
 77M9*Unsigned_64
 X 20 main.adb
-3U11*Main 3b11 63l5 63t9 21|1r10 22|1r10 23|1r10 24|1r10
+3U11*Main 3b11 61l5 61t9 21|1r10 22|1r10 23|1r10 24|1r10
 4o5 Min_Wait_Time{duration}
 5o5 Max_Wait_Time{duration} 21|20r15
 6o5 Min_Serve_Time{duration}
@@ -162,7 +162,7 @@ X 20 main.adb
 8o5 Min_Order_Time{duration}
 9o5 Max_Order_Time{duration}
 10i5 Number_of_Waiters{integer} 25r43 27r36 22|5r21 32r28
-11i5 Number_of_Guests{integer} 35r35 22|23r28
+11i5 Number_of_Guests{integer} 35r35 58r17 22|23r28
 13E10 Pizza_Types 13e51 16r46 23r31 21|3r13 23|4r42 12r18 24|7r32
 13n26 Hawaii{13E10}
 13n34 Pepperoni{13E10}
@@ -188,10 +188,9 @@ X 20 main.adb
 32Y15 Serve 21|13b20
 34P10 Guest_Access(31T15) 35r56 41r52 22|11r48
 35A10 Guest_Array(34P10)<integer> 46r21
-37w15 Pizzeria 51b20 57r5 58r5 59r5 60r5 61r5 62r5 21|7r5 22|2b16 38l5 38t13
-. 24|14r13
+37w15 Pizzeria 51b20 57r5 59r9 21|7r5 22|2b16 38l5 38t13 24|14r13
 38U19 Open 57s14 22|3b15 9l9 9t13
-39Y15 New_Guest 39>25 58s14 59s14 60s14 61s14 62s14 22|22b11 29l9 29t18
+39Y15 New_Guest 39>25 59s18 22|22b11 29l9 29t18
 39a25 Input{string} 22|24r50 26r27
 40Y15 Get_Waiter 40<26 21|7s14 22|31b11 37l9 37t19
 40p26 Waiter_Acc{26P10} 22|34m9
@@ -204,6 +203,7 @@ X 20 main.adb
 46a9 Guest_Arr{35A10} 22|13r16 28r9
 47i9 Busy_Waiter{integer} 22|19r9 19r24 32r14 34r34 35r29 36r9 36r24
 48i9 Curr_Guests{integer} 22|23r14 27r9 27r24 28r19 28r57
+58i9 I{integer} 59r28
 X 21 main-guest.adb
 3e5 Order{20|13E10} 8m32 10r22 11r58
 4o5 Dur{duration} 10m36 16r19
