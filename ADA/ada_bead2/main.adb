@@ -34,6 +34,9 @@ procedure Main is
     type Guest_Access is access Guest;
     type Guest_Array is array (1..Number_of_Guests) of Guest_Access;
 
+    task type Plate(Table : Integer);
+    type Plate_Access is access Plate;
+
     protected Pizzeria is
         procedure Open;
         entry New_Guest(Input : String);
@@ -53,6 +56,8 @@ procedure Main is
     task body Guest is separate;
 
     task body Waiter is separate;
+
+    task body Plate is separate;
 begin
     Pizzeria.Open;
     for I in 1..Number_of_Guests loop
