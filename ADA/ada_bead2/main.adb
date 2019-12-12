@@ -54,7 +54,30 @@ procedure Main is
     
 
 --waiters
+
+    task type Waiter(ID : Integer) is
+        entry Order(Food : in Pizza_Types; Table : in Integer; Dur : out Duration);
+    end Waiter;
+
+    type Waiter_Access is access Waiter;
+    type Waiter_Array is array (1..Number_of_Waiters) of Waiter_Access;
+
+    task body Waiter is
+        Order_Time : Duration;
+    begin
+        loop
+            accept Order(Food : in Pizza_Types; Table : in Integer; Dur : out Duration) do
+                Random_Duration.Get_Duration(Order_Time);
+                delay Order_Time;
+                Random_Duration.Get_Duration(Dur);
+            end Order;
+        end loop;
+    end Waiter;
+
 --guests
+
+
+
 
     Aasd : Pizza_Types;
     Asd : Duration;

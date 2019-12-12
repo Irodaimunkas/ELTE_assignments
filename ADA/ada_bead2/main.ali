@@ -10,25 +10,40 @@ RV NO_IO
 RV NO_LOCAL_PROTECTED_OBJECTS
 RV NO_PROTECTED_TYPES
 RV NO_STANDARD_STORAGE_POOLS
+RV NO_TASKING
 RV NO_DEFAULT_INITIALIZATION
 RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
 RV SPARK_05
+RV MAX_TASK_ENTRIES=1
 RV MAX_ENTRY_QUEUE_LENGTH=1+
 
+<<<<<<< HEAD
 U main%b		main.adb		599db2d3 NE OO SU
+=======
+U main%b		main.adb		d775f200 NE OO SU
+>>>>>>> 3888d5551873eba465d7bf44936cb8b4ada4a3e6
 W ada%s			ada.ads			ada.ali
 Z ada.exceptions%s	a-except.adb		a-except.ali
 W ada.numerics%s	a-numeri.ads		a-numeri.ali
 W ada.numerics.discrete_random%s
 W ada.numerics.float_random%s  a-nuflra.adb	a-nuflra.ali
+Z ada.real_time%s	a-reatim.adb		a-reatim.ali
 Z ada.tags%s		a-tags.adb		a-tags.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 W system%s		system.ads		system.ali
+<<<<<<< HEAD
+=======
+Z system.img_real%s	s-imgrea.adb		s-imgrea.ali
+Z system.parameters%s	s-parame.adb		s-parame.ali
+>>>>>>> 3888d5551873eba465d7bf44936cb8b4ada4a3e6
 Z system.random_numbers%s  s-rannum.adb		s-rannum.ali
 Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.task_info%s	s-tasinf.adb		s-tasinf.ali
 Z system.tasking%s	s-taskin.adb		s-taskin.ali
 Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+Z system.tasking.stages%s  s-tassta.adb		s-tassta.ali
 
 D ada.ads		20190518041256 76789da1 ada%s
 D a-except.ads		20190518041256 291912d5 ada.exceptions%s
@@ -37,6 +52,7 @@ D a-numeri.ads		20190518041256 bb51c45a ada.numerics%s
 D a-nudira.ads		20190518041256 71e55def ada.numerics.discrete_random%s
 D a-nudira.adb		20190518041256 72908cdb ada.numerics.discrete_random%b
 D a-nuflra.ads		20190518041256 4056ab7a ada.numerics.float_random%s
+D a-reatim.ads		20190518041258 0240fc73 ada.real_time%s
 D a-stream.ads		20190518041256 119b8fb3 ada.streams%s
 D a-tags.ads		20190518041258 491b781d ada.tags%s
 D a-textio.ads		20190518041258 aef4d56d ada.text_io%s
@@ -45,7 +61,11 @@ D interfac.ads		20190518041256 5ab55268 interfaces%s
 D i-c.ads		20190518041256 5421119b interfaces.c%s
 D i-cstrin.ads		20190518041256 341d0ddf interfaces.c.strings%s
 D i-cstrea.ads		20190518041256 e53d8b8e interfaces.c_streams%s
+<<<<<<< HEAD
 D main.adb		20191212194540 c6da912b main%b
+=======
+D main.adb		20191212171636 4832d1f8 main%b
+>>>>>>> 3888d5551873eba465d7bf44936cb8b4ada4a3e6
 D system.ads		20190518041258 32a08138 system%s
 D s-atacco.ads		20190518041258 4c36d12f system.address_to_access_conversions%s
 D s-crtl.ads		20190518041256 0ebbdb71 system.crtl%s
@@ -66,8 +86,10 @@ D s-stalib.ads		20190518041258 09bd3940 system.standard_library%s
 D s-stoele.ads		20190518041258 2dc34a04 system.storage_elements%s
 D s-tasinf.ads		20190518041258 601f6b72 system.task_info%s
 D s-taspri.ads		20190518041258 6c1d93d4 system.task_primitives%s
+D s-taprop.ads		20190518041258 1dd2e1b6 system.task_primitives.operations%s
 D s-taskin.ads		20190518041258 b9d612e2 system.tasking%s
 D s-taprob.ads		20190518041258 acd6094d system.tasking.protected_objects%s
+D s-tassta.ads		20190518041258 cca55c94 system.tasking.stages%s
 D s-traent.ads		20190518041256 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20190518041256 34867c83 system.unsigned_types%s
 D s-valuns.ads		20190518041258 35067db9 system.val_uns%s
@@ -76,10 +98,15 @@ D s-win32.ads		20190518041256 90ecf4e6 system.win32%s
 G a e
 G c Z b b [main standard 3 11 none]
 X 1 ada.ads
+<<<<<<< HEAD
 16K9*Ada 20e8 16|1r6 1r19 1r49 25r37 43r20 46r13 47r37
+=======
+16K9*Ada 20e8 17|1r6 1r19 1r49 25r37 43r20 46r13 47r37 49r13
+>>>>>>> 3888d5551873eba465d7bf44936cb8b4ada4a3e6
 X 4 a-numeri.ads
-16K13*Numerics 32e17 16|1r23 1r53 25r41 43r24 46r17 47r41
+16K13*Numerics 32e17 17|1r23 1r53 25r41 43r24 46r17 47r41
 X 5 a-nudira.ads
+<<<<<<< HEAD
 44k22*Discrete_Random 75e33 16|1w32 25r50
 50R9 Generator<26|63R9> 16|26r29[25]
 52V13 Random{16|24I18} 16|30s29[25]
@@ -99,25 +126,57 @@ X 12 interfac.ads
 77M9*Unsigned_64
 X 16 main.adb
 3U11*Main 3b11 64l5 64t9
+=======
+44k22*Discrete_Random 75e33 17|1w32 25r50
+50R9 Generator<28|63R9> 17|26r29[25]
+52V13 Random{17|24I18} 17|30s29[25]
+55U14 Reset<28|100p14> 17|29s22[25]
+X 6 a-nudira.adb
+53V16 Random[28|83]{17|24I18} 29|392b13[17|25]
+X 7 a-nuflra.ads
+41K22*Float_Random 74e30 17|1w62 43r33 46r26 47r50
+47R9*Generator<28|63R9> 17|43r46
+49F12*Uniformly_Distributed{float}
+51V13*Random{49F12}<28|71p13> 17|47s63
+53U14*Reset<28|100p14> 17|46s39
+X 11 a-textio.ads
+57K13*Text_IO 727e16 17|1w10 49r17
+508U14*Put_Line 17|49s25
+X 13 interfac.ads
+74M9*Unsigned_32
+77M9*Unsigned_64
+X 17 main.adb
+3U11*Main 3b11 81l5 81t9
+>>>>>>> 3888d5551873eba465d7bf44936cb8b4ada4a3e6
 4f5 Min_Wait_Time{float}
 5f5 Max_Wait_Time{float}
 6f5 Min_Serve_Time{float}
 7f5 Max_Serve_Time{float}
 8f5 Min_Order_Time{float}
 9f5 Max_Order_Time{float}
-10i5 Number_of_Waiters{integer}
+10i5 Number_of_Waiters{integer} 64r36
 11i5 Number_of_Guests{integer}
+<<<<<<< HEAD
 13E10 Pizza_Types 13e51 18r46 23r46 31r22 59r12
 13n26 Hawaii{13E10}
 13n34 Pepperoni{13E10}
 13n45 Vegan{13E10}
 17w15 Safe_Random 21b20 34l9 34t20 62r5
 18U19 Generate_Pizza 18<34 23b19 32l13 32t27 62s17
+=======
+13E10 Pizza_Types 13e51 18r46 23r46 31r22 60r31 76r12
+13n26 Hawaii{13E10}
+13n34 Pepperoni{13E10}
+13n45 Vegan{13E10}
+17w15 Safe_Random 21b20 34l9 34t20 79r5
+18U19 Generate_Pizza 18<34 23b19 32l13 32t27 79s17
+>>>>>>> 3888d5551873eba465d7bf44936cb8b4ada4a3e6
 18e34 Input{13E10} 23b34 31m13
 24I18 Rand_Range<short_short_integer> 25r66 27r19
 25K21 Rand_Int[5|44] 26r20 29r13 30r20
 26r13 Seed{5|50R9[25]} 29r28 30r36
 27i13 Num{24I18} 30m13 31r38
+<<<<<<< HEAD
 36w15 Random_Duration 40b20 50l9 50t24 63r5
 37U19 Get_Duration 37<32 41b19 49l13 49t25 63s21
 37o32 Input{duration} 41b32 48m13
@@ -130,6 +189,28 @@ X 26 s-rannum.ads
 75V13*Random{12|74M9} 27|221i21
 76V13*Random{12|77M9} 27|221i21
 X 32 s-stausa.ads
+=======
+36w15 Random_Duration 40b20 51l9 51t24 80r5
+37U19 Get_Duration 37<32 41b19 50l13 50t25 80s21
+37o32 Input{duration} 41b32 48m13
+42F18 Rand_Range<float> 44r19 47r26
+43r13 Seed{7|47R9} 46r45 47r70
+44f13 Num{42F18} 47m13 48r31 49r34
+59T15 Waiter 59d22 61l9 61e15 63r34 66b15 69l9 69t15
+59i22 ID{integer}
+60Y15 Order 60>21 60>44 60<64
+60e21 Food{13E10}
+60i44 Table{integer}
+60o64 Dur{duration}
+63P10 Waiter_Access(59T15) 64r58
+64A10 Waiter_Array(63P10)<integer>
+76e5 Aasd{13E10} 79m32
+77o5 Asd{duration} 80m34
+X 28 s-rannum.ads
+75V13*Random{13|74M9} 29|221i21
+76V13*Random{13|77M9} 29|221i21
+X 34 s-stausa.ads
+>>>>>>> 3888d5551873eba465d7bf44936cb8b4ada4a3e6
 203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
 268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
 
