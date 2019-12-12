@@ -46,7 +46,6 @@ procedure Main is
             Ada.Numerics.Float_Random.Reset(Seed);
             Num := 5.0 * Rand_Range(Ada.Numerics.Float_Random.Random(Seed));
             Input := Duration(Num);
-            Ada.Text_IO.Put_Line(Num'Image);
         end Get_Duration;
     end Random_Duration;
 
