@@ -37,7 +37,6 @@ procedure Main is
     task type Waiter(ID : Integer) is
         entry Order(Food : in Pizza_Types; Table : in Integer; Dur : out Duration);
     end Waiter;
-
     type Waiter_Boolean_Array is array(1..Number_of_Waiters) of Boolean;
     type Waiter_Access is access Waiter;
     type Waiter_Array is array (1..Number_of_Waiters) of Waiter_Access;
@@ -47,7 +46,6 @@ procedure Main is
     task type Guest(Name : String_Access; Table : Integer) is
         entry Serve;
     end Guest;
-
     type Guest_Access is access Guest;
     type Guest_Array is array (1..Number_of_Guests) of Guest_Access;
 
@@ -72,4 +70,9 @@ procedure Main is
     task body Waiter is separate;
 begin
     Pizzeria.Open;
+    Pizzeria.New_Guest("1");
+    Pizzeria.New_Guest("2");
+    Pizzeria.New_Guest("3");
+    Pizzeria.New_Guest("4");
+    Pizzeria.New_Guest("5");
 end Main;

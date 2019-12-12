@@ -8,6 +8,7 @@ begin
     Safe_Random.Generate_Pizza(Order);
     select
         Waiter.Order(Order, Table, Dur);
+        Ada.Text_IO.Put_Line(Table'Image & " ordered " & Order'Image);
         select
             accept Serve;
             Ada.Text_IO.Put_Line(Table'Image & " eating");

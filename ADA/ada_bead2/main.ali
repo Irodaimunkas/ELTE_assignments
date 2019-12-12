@@ -35,7 +35,7 @@ RV MAX_TASK_ENTRIES=1
 RV MAX_TASKS=1+
 RV MAX_ENTRY_QUEUE_LENGTH=1+
 
-U main%b		main.adb		5d3e1043 NE OO SU
+U main%b		main.adb		cd809678 NE OO SU
 W ada%s			ada.ads			ada.ali
 Z ada.calendar.delays%s	a-caldel.adb		a-caldel.ali
 Z ada.exceptions%s	a-except.adb		a-except.ali
@@ -45,8 +45,11 @@ W ada.numerics.float_random%s  a-nuflra.adb	a-nuflra.ali
 Z ada.real_time%s	a-reatim.adb		a-reatim.ali
 Z ada.tags%s		a-tags.adb		a-tags.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
+Z interfaces%s		interfac.ads		interfac.ali
 W system%s		system.ads		system.ali
 Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.concat_3%s	s-conca3.adb		s-conca3.ali
+Z system.img_enum_new%s	s-imenne.adb		s-imenne.ali
 Z system.img_int%s	s-imgint.adb		s-imgint.ali
 Z system.parameters%s	s-parame.adb		s-parame.ali
 Z system.random_numbers%s  s-rannum.adb		s-rannum.ali
@@ -80,18 +83,20 @@ D interfac.ads		20190518041256 5ab55268 interfaces%s
 D i-c.ads		20190518041256 5421119b interfaces.c%s
 D i-cstrin.ads		20190518041256 341d0ddf interfaces.c.strings%s
 D i-cstrea.ads		20190518041256 e53d8b8e interfaces.c_streams%s
-D main.adb		20191212215420 40ed21a8 main%b
-D main-guest.adb	20191212215818 2551524e main.guest
+D main.adb		20191212222450 9a9ccda9 main%b
+D main-guest.adb	20191212222456 6f9e3874 main.guest
 D main-pizzeria.adb	20191212220506 8855d67a main.pizzeria
 D main-safe_random.adb	20191212215032 e4e7316b main.safe_random
-D main-waiter.adb	20191212215142 cb77a74c main.waiter
+D main-waiter.adb	20191212222240 cb77a74c main.waiter
 D system.ads		20190518041258 32a08138 system%s
 D s-atacco.ads		20190518041258 4c36d12f system.address_to_access_conversions%s
 D s-conca2.ads		20190518041256 02a0d7d0 system.concat_2%s
+D s-conca3.ads		20190518041258 0b705ca5 system.concat_3%s
 D s-crtl.ads		20190518041256 0ebbdb71 system.crtl%s
 D s-exctab.ads		20190518041256 54135002 system.exception_table%s
 D s-ficobl.ads		20190518041258 078245e4 system.file_control_block%s
 D s-finroo.ads		20190518041258 4ff27390 system.finalization_root%s
+D s-imenne.ads		20190518041256 614c06c0 system.img_enum_new%s
 D s-imgint.ads		20190518041256 02dbe0c2 system.img_int%s
 D s-imguns.ads		20190518041256 9ff43cf7 system.img_uns%s
 D s-memory.ads		20190518041256 597d6634 system.memory%s
@@ -125,38 +130,39 @@ D s-win32.ads		20190518041256 90ecf4e6 system.win32%s
 G a e
 G c Z b b [main standard 3 11 none]
 X 1 ada.ads
-16K9*Ada 20e8 20|1r6 1r19 1r49 28r20 31r13 32r37 21|13r13 16r13 20r9 23|6r33
+16K9*Ada 20e8 20|1r6 1r19 1r49 28r20 31r13 32r37 21|11r9 14r13 17r13 21r9
+. 23|6r33
 X 7 a-numeri.ads
 16K13*Numerics 32e17 20|1r23 1r53 28r24 31r17 32r41 23|6r37
 X 8 a-nudira.ads
 44k22*Discrete_Random 75e33 20|1w32 23|6r46
-50R9 Generator<38|63R9> 23|7r25[6]
+50R9 Generator<40|63R9> 23|7r25[6]
 52V13 Random{23|5I14} 23|11s25[6]
-55U14 Reset<38|100p14> 23|10s18[6]
+55U14 Reset<40|100p14> 23|10s18[6]
 X 9 a-nudira.adb
-53V16 Random[38|83]{23|5I14} 39|392b13[23|6]
+53V16 Random[40|83]{23|5I14} 41|392b13[23|6]
 X 10 a-nuflra.ads
 41K22*Float_Random 74e30 20|1w62 28r33 31r26 32r50
-47R9*Generator<38|63R9> 20|28r46
+47R9*Generator<40|63R9> 20|28r46
 49F12*Uniformly_Distributed{float}
-51V13*Random{49F12}<38|71p13> 20|32s63
-53U14*Reset<38|100p14> 20|31s39
+51V13*Random{49F12}<40|71p13> 20|32s63
+53U14*Reset<40|100p14> 20|31s39
 X 14 a-textio.ads
-57K13*Text_IO 727e16 20|1w10 21|13r17 16r17 20r13
-508U14*Put_Line 21|13s25 16s25 20s21
+57K13*Text_IO 727e16 20|1w10 21|11r13 14r17 17r17 21r13
+508U14*Put_Line 21|11s21 14s25 17s25 21s21
 X 16 interfac.ads
 74M9*Unsigned_32
 77M9*Unsigned_64
 X 20 main.adb
-3U11*Main 3b11 75l5 75t9 21|1r10 22|1r10 23|1r10 24|1r10
+3U11*Main 3b11 78l5 78t9 21|1r10 22|1r10 23|1r10 24|1r10
 4o5 Min_Wait_Time{duration}
-5o5 Max_Wait_Time{duration} 21|19r15
+5o5 Max_Wait_Time{duration} 21|20r15
 6o5 Min_Serve_Time{duration}
 7o5 Max_Serve_Time{duration}
 8o5 Min_Order_Time{duration}
 9o5 Max_Order_Time{duration}
-10i5 Number_of_Waiters{integer} 41r43 43r36 22|5r21 31r28
-11i5 Number_of_Guests{integer} 52r35 22|22r28
+10i5 Number_of_Waiters{integer} 40r43 42r36 22|5r21 31r28
+11i5 Number_of_Guests{integer} 50r35 22|22r28
 13E10 Pizza_Types 13e51 16r46 38r31 21|3r13 23|4r42 12r18 24|7r32
 13n26 Hawaii{13E10}
 13n34 Pepperoni{13E10}
@@ -170,46 +176,46 @@ X 20 main.adb
 27F18 Rand_Range<float> 29r19 32r26
 28r13 Seed{10|47R9} 31r45 32r70
 29f13 Num{27F18} 32m13 33r31
-37T15 Waiter 37d22 39l9 39e15 42r34 72b15 22|6r34 24|2b11 14l5 14t11
+37T15 Waiter 37d22 39l9 39e15 41r34 70b15 22|6r34 24|2b11 14l5 14t11
 37i22 ID{integer}
 38Y15 Order 38>21 38>44 38<64 21|10s16 24|7b16 12l13 12t18
 38e21 Food{13E10}
 38i44 Table{integer}
 38o64 Dur{duration} 24|10m42 10r42
-41A10 Waiter_Boolean_Array(boolean)<integer> 62r31
-42P10 Waiter_Access(37T15) 43r58 57r43 21|5r14 22|30r39
-43A10 Waiter_Array(42P10)<integer> 61r22
-45P10 String_Access(string) 47r28 22|23r22
-47T15 Guest 47d21 47d43 49l9 49e14 51r33 70b15 21|2b11 22l5 22t10 22|27r39
-47p21 Name{45P10}
-47i43 Table{integer} 21|10r29 13r34 16r34 20r30
-48Y15 Serve 21|12b20
-51P10 Guest_Access(47T15) 52r56 58r52 22|11r48
-52A10 Guest_Array(51P10)<integer> 63r21
-54w15 Pizzeria 68b20 74r5 21|7r5 22|2b16 37l5 37t13
-55U19 Open 74s14 22|3b15 9l9 9t13
-56Y15 New_Guest 56>25 22|21b11 28l9 28t18
-56a25 Input{string} 22|23r50 25r27
-57Y15 Get_Waiter 57<26 21|7s14 22|30b11 36l9 36t19
-57p26 Waiter_Acc{42P10} 22|33m9
-58V18 Get_Guest{51P10} 58>28 22|11b14 14l9 14t18
-58i28 Table{integer} 22|11b24 13r26
-59U19 Waiter_Ready 59>32 22|16b15 19l9 19t21
-59i32 ID{integer} 22|16b28 18r29
-61a9 Waiter_Arr{43A10} 22|6r13 33r23
-62a9 Waiter_Availability{41A10} 22|7r13 18r9 34r9
-63a9 Guest_Arr{52A10} 22|13r16 27r9
-64i9 Busy_Waiter{integer} 22|31r14 33r34 34r29 35r9 35r24
-65i9 Curr_Guests{integer} 22|22r14 26r9 26r24 27r19 27r57
+40A10 Waiter_Boolean_Array(boolean)<integer> 60r31
+41P10 Waiter_Access(37T15) 42r58 55r43 21|5r14 22|30r39
+42A10 Waiter_Array(41P10)<integer> 59r22
+44P10 String_Access(string) 46r28 22|23r22
+46T15 Guest 46d21 46d43 48l9 48e14 49r33 68b15 21|2b11 23l5 23t10 22|27r39
+46p21 Name{44P10}
+46i43 Table{integer} 21|10r29 11r30 14r34 17r34 21r30
+47Y15 Serve 21|13b20
+49P10 Guest_Access(46T15) 50r56 56r52 22|11r48
+50A10 Guest_Array(49P10)<integer> 61r21
+52w15 Pizzeria 66b20 72r5 73r5 74r5 75r5 76r5 77r5 21|7r5 22|2b16 37l5 37t13
+53U19 Open 72s14 22|3b15 9l9 9t13
+54Y15 New_Guest 54>25 73s14 74s14 75s14 76s14 77s14 22|21b11 28l9 28t18
+54a25 Input{string} 22|23r50 25r27
+55Y15 Get_Waiter 55<26 21|7s14 22|30b11 36l9 36t19
+55p26 Waiter_Acc{41P10} 22|33m9
+56V18 Get_Guest{49P10} 56>28 22|11b14 14l9 14t18
+56i28 Table{integer} 22|11b24 13r26
+57U19 Waiter_Ready 57>32 22|16b15 19l9 19t21
+57i32 ID{integer} 22|16b28 18r29
+59a9 Waiter_Arr{42A10} 22|6r13 33r23
+60a9 Waiter_Availability{40A10} 22|7r13 18r9 34r9
+61a9 Guest_Arr{50A10} 22|13r16 27r9
+62i9 Busy_Waiter{integer} 22|31r14 33r34 34r29 35r9 35r24
+63i9 Curr_Guests{integer} 22|22r14 26r9 26r24 27r19 27r57
 X 21 main-guest.adb
-3e5 Order{20|13E10} 8m32 10r22
-4o5 Dur{duration} 10m36 15r19
-5p5 Waiter{20|42P10} 7m25 7r25 10r9
+3e5 Order{20|13E10} 8m32 10r22 11r58
+4o5 Dur{duration} 10m36 16r19
+5p5 Waiter{20|41P10} 7m25 7r25 10r9
 X 22 main-pizzeria.adb
 5i13 I{integer} 6r24 6r41 7r33
 21a21 Input{string}
-23p9 String_Acc{20|45P10} 25r9 27r45
-30p22 Waiter_Acc{20|42P10}
+23p9 String_Acc{20|44P10} 25r9 27r45
+30p22 Waiter_Acc{20|41P10}
 X 23 main-safe_random.adb
 5I14 Rand_Range<short_short_integer> 6r62 8r15
 6K17 Rand_Int[8|44] 7r16 10r9 11r16
@@ -223,16 +229,16 @@ X 24 main-waiter.adb
 7o65 Dur{duration}
 X 25 system.ads
 67M9*Address
-X 34 s-memory.ads
+X 36 s-memory.ads
 53V13*Alloc{25|67M9} 103i<c,__gnat_malloc>22
 68U14*Free 104i<c,__gnat_free>22
 76V13*Realloc{25|67M9} 105i<c,__gnat_realloc>22
-X 38 s-rannum.ads
-75V13*Random{16|74M9} 39|221i21
-76V13*Random{16|77M9} 39|221i21
-X 44 s-stausa.ads
+X 40 s-rannum.ads
+75V13*Random{16|74M9} 41|221i21
+76V13*Random{16|77M9} 41|221i21
+X 46 s-stausa.ads
 203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
 268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
-X 46 s-stalib.adb
+X 48 s-stalib.adb
 93U14 Break_Start 94i<c,__gnat_break_start>22
 
