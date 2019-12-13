@@ -6,14 +6,12 @@ task body Waiter is
     Plate_To_Serve_Int :  Integer;
 begin
     loop
-        select
-            accept Order(Food : in Pizza_Types; Table : in Integer; Dur : out Duration) do
-                Plate_To_Serve_Int := Table;
-                Safe_Random.Get_Duration(Order_Time);
-                delay Order_Time;
-                Safe_Random.Get_Duration(Dur);
-            end Order;
-        end select;
+        accept Order(Food : in Pizza_Types; Table : in Integer; Dur : out Duration) do
+            Plate_To_Serve_Int := Table;
+            Safe_Random.Get_Duration(Order_Time);
+            delay Order_Time;
+            Safe_Random.Get_Duration(Dur);
+        end Order;
         
         Safe_Random.Get_Duration(Serve_Time);
         delay Serve_Time;
