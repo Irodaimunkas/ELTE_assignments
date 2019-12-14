@@ -4,9 +4,10 @@ task body Guest is
     Dur : Duration;
     Waiter : Waiter_Access;
 begin
-    Pizzeria.Get_Waiter(Waiter);
-    Safe_Random.Generate_Pizza(Order);
+    Ada.Text_IO.Put_Line(Table'Image & " waiting for a waiter...");
     select
+        Pizzeria.Get_Waiter(Waiter);
+        Safe_Random.Generate_Pizza(Order);
         Waiter.Order(Order, Table, Dur);
         Ada.Text_IO.Put_Line(Table'Image & " ordered " & Order'Image);
         select
