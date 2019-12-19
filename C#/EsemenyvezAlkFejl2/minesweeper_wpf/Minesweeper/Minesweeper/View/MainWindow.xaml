@@ -1,0 +1,36 @@
+﻿<Window x:Class="Minesweeper.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Minesweeper"
+        mc:Ignorable="d"
+        Title="Minesweeper" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Menu Grid.Row="0">
+            <MenuItem Header="New Game">
+                <MenuItem Header="Easy" />
+                <MenuItem Header="Medium" />
+                <MenuItem Header="Hard" />
+            </MenuItem>
+            <MenuItem Header="Load Game" />
+            <MenuItem Header="Save Game" />
+        </Menu>
+        <ItemsControl Grid.Row="1" ItemsSource="{Binding Fields}">
+            
+        </ItemsControl>
+        <StatusBar Grid.Row="2">
+            <StatusBarItem>
+                <TextBlock Text="Current Player: " />
+            </StatusBarItem>
+            <StatusBarItem>
+                <TextBlock Text="{Binding Player}" />
+            </StatusBarItem>
+        </StatusBar>
+    </Grid>
+</Window>
