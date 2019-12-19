@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Minesweeper"
         mc:Ignorable="d"
-        Title="Minesweeper" Height="450" Width="800">
+        Title="Minesweeper" Height="800" Width="800" ResizeMode="NoResize">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -14,15 +14,35 @@
         </Grid.RowDefinitions>
         <Menu Grid.Row="0">
             <MenuItem Header="New Game">
-                <MenuItem Header="Easy" />
-                <MenuItem Header="Medium" />
-                <MenuItem Header="Hard" />
+                <MenuItem Header="Easy" Command="{Binding NewGameEasyCommand}" />
+                <MenuItem Header="Medium" Command="{Binding NewGameMediumCommand}" />
+                <MenuItem Header="Hard" Command="{Binding NewGameHardCommand}" />
             </MenuItem>
-            <MenuItem Header="Load Game" />
-            <MenuItem Header="Save Game" />
+            <MenuItem Header="Load Game" Command="{Binding LoadGameOpenCommand}"/>
+            <MenuItem Header="Save Game" Command="{Binding SaveGameOpenCommand}"/>
         </Menu>
         <ItemsControl Grid.Row="1" ItemsSource="{Binding Fields}">
-            
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <UniformGrid Rows="{Binding MapSize}" Columns="{Binding MapSize}" />
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Button Content="{Binding Value}" FontSize="24" FontWeight="Bold" Background="{Binding Color}" >
+                        <Button.InputBindings>
+                            <MouseBinding Gesture="LeftClick" Command="{Binding StepCommand}" CommandParameter="{Binding Number}"  />
+                            <MouseBinding Gesture="RightClick" Command="{Binding AlertCommand}" CommandParameter="{Binding Number}"  />
+                        </Button.InputBindings>
+                    </Button>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+            <ItemsControl.ItemContainerStyle>
+                <Style>
+                    <Setter Property="Grid.Row" Value="{Binding X}" />
+                    <Setter Property="Grid.Column" Value="{Binding Y}" />
+                </Style>
+            </ItemsControl.ItemContainerStyle>
         </ItemsControl>
         <StatusBar Grid.Row="2">
             <StatusBarItem>

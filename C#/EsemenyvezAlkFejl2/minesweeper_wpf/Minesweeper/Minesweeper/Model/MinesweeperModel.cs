@@ -20,6 +20,7 @@ namespace Minesweeper.Model
 
         public event EventHandler<MinesweeperEventArgs> PlayerLost;
         public event EventHandler Draw;
+        public event EventHandler Loaded;
 
         public MinesweeperModel(IMinesweeperDataAccess dataAccess)
         {
@@ -78,6 +79,7 @@ namespace Minesweeper.Model
         public async Task LoadGameAsync(String path)
         {
             _gameTable = await _dataAccess.LoadAsync(path);
+            Loaded(this, EventArgs.Empty);
         }
 
         public async Task SaveGameAsync(String path)
@@ -102,6 +104,14 @@ namespace Minesweeper.Model
                     }
                 }
             }
+        }
+
+        public async Task<ICollection<SaveEntry>> ListGamesAsync()
+        {
+            if (_dataAccess == null)
+                throw new InvalidOperationException("No data access is provided.");
+
+            return await _dataAccess.ListAsync();
         }
 
         private void GenerateMap()

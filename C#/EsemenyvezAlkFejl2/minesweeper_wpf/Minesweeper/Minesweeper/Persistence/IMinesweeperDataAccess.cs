@@ -16,5 +16,7 @@ namespace Minesweeper.Persistence
         */
         Task<MinesweeperTable> LoadAsync(String path);
         Task SaveAsync(String path, MinesweeperTable gameTable);
+
+        Task<ICollection<SaveEntry>> ListAsync();
     }
 }
