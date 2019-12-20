@@ -177,7 +177,7 @@ namespace Minesweeper.ViewModel
             RefreshTable();
         }
 
-        private void OnAlert(int index)
+        private void OnAlert(Int32 index)
         {
             MinesweeperField field = Fields[index];
             if (field.Color == "Red") field.Color = "White";
