@@ -1,0 +1,48 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>420</x><y>40</y><w>220</w><h>290</h></coordinates><panel_attributes>_blackHoleModel: Class_
+--
++setters/getters
++blackHoleModel(parent :QObject*)
++newGame(mapSize :int) :void
++findThenMoveShips() :void
++shipDirChange(row :int, col :int) :void
++saveGame() :void
++loadGame() :void
+[signals]
++endGame() :void
+--
+-moveShip(x :int, y :int, field :Field) :void
+-stepBHole() :void
+-_map :QVector&lt;QVector&lt;Field&gt;&gt;
+-_mapSize :int
+- _player :Player
+-_score[2] :int
+-_firstDirChange :bool
+-_dataAccess :dataAccess*</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>80</x><y>460</y><w>620</w><h>60</h></coordinates><panel_attributes>_dataAccess: Class_
+--
++saveGame(saveGameData :QVector&lt;QVector&lt;Field&gt;&gt;. currPlayer :Player, firstDirChange :bool, score[2] :int)
++loadGame(saveGameData :QVector&lt;QVector&lt;Field&gt;&gt;&amp;. currPlayer :Player&amp;, firstDirChange :bool&amp;, score[2] :int&amp;)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>60</x><y>30</y><w>270</w><h>370</h></coordinates><panel_attributes>_blackHoleView: Class_
+--
++blackHoleView(parent :QWidget*)
++redraw() :void
++setMapViewDir(i :int, j :int) :void
+--
+-_mapView :QVector&lt;QVector&lt;QPushButton*&gt; &gt;
+-_easyPB :QPushButton*
+-_medPB :QPushButton*
+-_hardPB :QPushButton*
+-_nextTurnPB :QPushButton*
+-_saveGamePB :QPushButton*
+-_loadGamePB :QPushButton*
+-_vBoxLayout :QVBoxLayout*
+-_diffHBoxLayout :QHBoxLayout*
+-_loadSaveHBoxLayout :QHBoxLayout*
+-_gridBoxLayout :QGridBoxLayout*
+-_model :blackHoleModel*
+--
+[private slots]
+-newGame() :void
+-onShipClick() :void
+-onNextTurn() :void
+-onEndGame() :void
+-onSaveGame() :void
+-onLoadGame() :void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>180</y><w>120</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;100;10</additional_attributes></element><element><id>Relation</id><coordinates><x>520</x><y>320</y><w>30</w><h>160</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;140</additional_attributes></element></diagram>
