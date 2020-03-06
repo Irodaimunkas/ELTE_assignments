@@ -1,8 +1,8 @@
-calculate: calculate.cc lex.yy.cc
-	g++ -ocalculate calculate.cc lex.yy.cc
+abap: abap.cc lex.yy.cc
+	g++ -oabap abap.cc lex.yy.cc
 
-lex.yy.cc: calculate.l
-	flex calculate.l
+lex.yy.cc: abap.l
+	flex abap.l
 
 clean:
-	rm -f lex.yy.cc calculate
+	rm -f lex.yy.cc abap
