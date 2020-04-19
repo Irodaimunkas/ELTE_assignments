@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using TodoList.Web.Models;
 using TodoList.Services;
+using Microsoft.AspNetCore.Authorization;
 
 namespace TodoList.Web.Controllers
 {
+    [Authorize]
     public class ListsController : Controller
     {
         private readonly TodoListService _service;
@@ -20,12 +22,14 @@ namespace TodoList.Web.Controllers
         }
 
         // GET: Lists
+        [AllowAnonymous]
         public IActionResult Index()
         {
             return View(_service.GetLists());
         }
 
         // GET: Lists/Details/5
+        [AllowAnonymous]
         public IActionResult Details(int id, string sortOrder = "")
         {
 

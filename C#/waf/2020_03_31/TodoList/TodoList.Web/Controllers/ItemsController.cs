@@ -9,9 +9,11 @@ using TodoList.Web.Models;
 using TodoList.Services;
 using Microsoft.AspNetCore.Http;
 using System.IO;
+using Microsoft.AspNetCore.Authorization;
 
 namespace TodoList.Web.Controllers
 {
+    [Authorize]
     public class ItemsController : Controller
     {
         private readonly TodoListService _service;

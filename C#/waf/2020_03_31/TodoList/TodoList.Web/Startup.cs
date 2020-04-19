@@ -10,6 +10,7 @@ using Microsoft.Extensions.Hosting;
 using TodoList.Web.Models;
 using Microsoft.EntityFrameworkCore;
 using TodoList.Services;
+using Microsoft.AspNetCore.Identity;
 
 namespace TodoList.Web
 {
@@ -45,6 +46,18 @@ namespace TodoList.Web
             services.AddTransient<TodoListService>();
 
             services.AddControllersWithViews();
+
+            services.AddIdentity<ApplicationUser, IdentityRole>(options =>
+            {
+                options.Password.RequireDigit = false;
+                options.Password.RequiredLength = 3;
+                options.Password.RequiredUniqueChars = 0;
+                options.Password.RequireLowercase = false;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireUppercase = false;
+            })
+            .AddEntityFrameworkStores<TodoListContext>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -70,6 +83,10 @@ namespace TodoList.Web
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            app.UseRouting();
+            app.UseAuthentication();
+            app.UseAuthorization();
 
             // Adatbázis inicializálása
             DbInitializer.Initialize(serviceProvider, Configuration.GetValue<string>("ImageStore"));
