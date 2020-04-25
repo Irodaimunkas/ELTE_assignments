@@ -1,0 +1,57 @@
+﻿@model SeatsViewModel
+@{
+    ViewData["Title"] = "Booking";
+    var counter = 6;
+}
+
+<h1 class="text-center">@((ViewData["Movie"] as Movie).Name)</h1>
+<br />
+<table style="margin: 0 auto;">
+    <tr>
+        <td style="background-color: white; border: 1px solid black" width="50px" height="50px" />
+        <td> - Free</td>
+        <td style="background-color: yellow; border: 1px solid black" width="50px" height="50px" />
+        <td> - Selected</td>
+        <td style="background-color: orange; border: 1px solid black" width="50px" height="50px" />
+        <td> - Booked</td>
+        <td style="background-color: black; border: 1px solid white" width="50px" height="50px" />
+        <td> - Sold</td>
+    </tr>
+</table>
+<br />
+<form asp-action="Book" asp-controller="Screenings" method="post">
+    <input hidden asp-for="ScreeningId" value="@((ViewData["Screening"] as Screening).Id)" />
+    <input hidden asp-for="RoomId" value="@((ViewData["Room"] as Room).Id)" />
+    <table style="margin: 0 auto;">
+        @for (Int32 i = 0; i < (ViewData["Room"] as Room).Rows; i++)
+        {
+            <tr>
+                @for (Int32 j = 0; j < (ViewData["Room"] as Room).Columns; j++)
+                {
+                    var seat = (ViewData["Seats"] as IEnumerable<Seat>).Where(seat => seat.Row == i && seat.Column == j).FirstOrDefault();
+                    @switch (seat.Status)
+                    {
+                        case Status.Free:
+                            <td style="background-color: white; border: 1px solid black" width="50px" height="50px">
+                                <input asp-for="Seats[i][j]" onclick="selectSeat(this)" value="Free" style="width:inherit; height:inherit; opacity: 0; cursor: pointer" />
+                            </td>
+                            break;
+                        case Status.Booked:
+                            <td style="background-color: orange; border: 1px solid black" width="50px" height="50px">
+                                <input asp-for="Seats[i][j]" value="Booked" style="width:inherit; height:inherit; opacity: 0; cursor: none" />
+                            </td>
+                            break;
+                        case Status.Sold:
+                            <td style="background-color: black; border: 1px solid white" width="50px" height="50px">
+                                <input asp-for="Seats[i][j]" value="Sold" style="width:inherit; height:inherit; opacity: 0; cursor: none" />
+                            </td>
+                            break;
+                    }
+                }
+            </tr>
+        }
+    </table>
+    <input asp-for="BookerName" placeholder="Name" />
+    <input asp-for="PhoneNumber" placeholder="+36704453328" />
+    <input type="submit" value="Book" class="btn btn-primary" />
+</form>

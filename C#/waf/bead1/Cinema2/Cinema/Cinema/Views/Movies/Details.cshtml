@@ -1,0 +1,76 @@
+﻿@model Cinema.Models.Movie
+@{
+    ViewData["Title"] = Model.Name;
+}
+
+<h1>Details</h1>
+
+<div class="row">
+    <div class="col-4">
+        <img src="@Url.Action("DisplayImage", "Movies", new { id = Model.Id })" width="100%" />
+    </div>
+    <div class="col-8">
+        <div class="row">
+            <div class="col-4 h1">
+                Name:
+            </div>
+            <div class="col-8 h2">
+                @Model.Name
+            </div>
+        </div>
+        <br />
+        <hr />
+        <div class="row">
+            <div class="col-4 h1">
+                Director:
+            </div>
+            <div class="col-8 h2">
+                @Model.Director
+            </div>
+        </div>
+        <br />
+        <hr />
+        <div class="row">
+            <div class="col-4 h1">
+                Synopsis:
+            </div>
+            <div class="col-8">
+                @Model.Synopsis
+            </div>
+        </div>
+        <br />
+        <hr />
+        <div class="row">
+            <div class="col-4 h1">
+                Runtime:
+            </div>
+            <div class="col-8 h2">
+                @Model.LengthInMinutes Minutes
+            </div>
+        </div>
+    </div>
+</div>
+<br />
+@foreach (var screening in (ViewData["Screenings"] as List<Screening>).OrderBy(i => i.StartTime))
+{
+    <a class="page-link" asp-action="Booking" asp-controller="Screenings" asp-route-id="@screening.Id">
+        <div class="row">
+            <div class="col-6 text-center h1">
+                @screening.StartTime
+            </div>
+            <div class="col-6 text-center h1">
+                @foreach (var currRoom in ViewData["Rooms"] as List<Room>)
+                {
+                    if (currRoom.Id == screening.RoomId)
+                    {
+                        @currRoom.Name;
+                        break;
+                    }
+                }
+            </div>
+        </div>
+    </a>
+}
+
+
+
