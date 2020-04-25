@@ -53,10 +53,39 @@ namespace Cinema.Controllers
         }
 
         [HttpPost]
-        public IActionResult Book(SeatsViewModel viewModel)
+        public IActionResult Booking(SeatsViewModel viewModel, Int32 movieId)
         {
-            Console.WriteLine(viewModel);
-            return RedirectToAction("Booking", new { id = 1 });
+            if (ModelState.IsValid)
+            {
+                var seatsInDatab = _service.GetSeatsByScreeningId(viewModel.ScreeningId);
+
+                foreach(var seat in seatsInDatab)
+                {
+                    if(seat.Status != viewModel.Seats[seat.Row][seat.Column])
+                    {
+                        var upSeat = new Seat
+                        {
+                            Id = seat.Id,
+                            ScreeningId = seat.ScreeningId,
+                            RoomId = seat.RoomId,
+                            Row = seat.Row,
+                            Column = seat.Column,
+                            Status = viewModel.Seats[seat.Row][seat.Column],
+                            BookerName = viewModel.BookerName,
+                            PhoneNumber = viewModel.PhoneNumber
+                        };
+                        _service.UpdateSeat(upSeat);
+                    }
+                }
+
+                return RedirectToAction("Index", "Home");
+            }
+
+            ViewData["Screening"] = _service.GetScreening(viewModel.ScreeningId);
+            ViewData["Room"] = _service.GetRoom(viewModel.RoomId);
+            ViewData["Movie"] = _service.GetMovie(movieId);
+            ViewData["Seats"] = _service.GetSeatsByScreeningId(viewModel.ScreeningId);
+            return View(viewModel);
         }
     }
 }

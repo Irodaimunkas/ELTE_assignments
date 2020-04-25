@@ -16,6 +16,27 @@ namespace Cinema.Services
             _context = context;
         }
 
+        public bool UpdateSeat(Seat seat)
+        {
+            try
+            {
+                //_context.Update(seat);
+                var seatObj = _context.Seats.First(i => i.Id == seat.Id);
+                _context.Entry(seatObj).CurrentValues.SetValues(seat);
+                _context.SaveChanges();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                return false;
+            }
+            catch (DbUpdateException)
+            {
+                return false;
+            }
+
+            return true;
+        }
+
         public List<Seat> GetSeatsByScreeningId(int screeningId)
         {
             return _context.Seats

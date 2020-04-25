@@ -9,10 +9,9 @@ namespace Cinema.Models
 {
     public class SeatsViewModel
     {
-        public const Int32 MAX_COL_NUMBER = 100;
-        public const Int32 MAX_ROW_NUMBER = 100;
+        const Int32 MAX_COL_NUMBER = 100;
+        const Int32 MAX_ROW_NUMBER = 100;
 
-        [Required]
         public Status[][] Seats { get; set; }
 
         [DisplayName("Screening")]
@@ -21,10 +20,12 @@ namespace Cinema.Models
         [DisplayName("Room")]
         public Int32 RoomId { get; set; }
 
+        [Required]
         [MaxLength(30)]
         public String BookerName { get; set; }
 
-        [Display(Name = "Phone")]
+        [Required]
+        [DisplayName("Phone")]
         [DataType(DataType.PhoneNumber)]
         public String PhoneNumber { get; set; }
 

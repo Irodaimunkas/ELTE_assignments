@@ -3,12 +3,21 @@
 
 // Write your JavaScript code.
 
+var counter = 6;
+
 function selectSeat(elem) {
-    if (elem.value == "Free") {
+    if (elem.value == "Free" && counter > 0) {
         elem.value = "Booked";
         elem.parentElement.style = "background-color: yellow; border: 1px solid black"
-    } else {
+        counter--;
+    } else if (elem.value == "Booked") {
         elem.value = "Free";
         elem.parentElement.style = "background-color: white; border: 1px solid black"
+        counter++;
     }
+    console.log(counter);
+}
+
+function resetSeatCounter() {
+    counter = 6;
 }
