@@ -27,6 +27,8 @@ namespace Cinema.Models
         [Required]
         [DisplayName("Phone")]
         [DataType(DataType.PhoneNumber)]
+        [RegularExpression(@"^\+?[0-9]{2}[0-9]{9}$",
+                   ErrorMessage = "Entered phone format is not valid.")]
         public String PhoneNumber { get; set; }
 
         public SeatsViewModel()
