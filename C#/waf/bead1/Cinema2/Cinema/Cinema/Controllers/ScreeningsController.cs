@@ -78,7 +78,7 @@ namespace Cinema.Controllers
                     }
                 }
 
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Success");
             }
 
             ViewData["Screening"] = _service.GetScreening(viewModel.ScreeningId);
@@ -86,6 +86,11 @@ namespace Cinema.Controllers
             ViewData["Movie"] = _service.GetMovie(movieId);
             ViewData["Seats"] = _service.GetSeatsByScreeningId(viewModel.ScreeningId);
             return View(viewModel);
+        }
+
+        public IActionResult Success()
+        {
+            return View();
         }
     }
 }

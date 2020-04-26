@@ -165,3 +165,4 @@ C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\bead1\Cinema2\Cinema\Cinema\o
 C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\bead1\Cinema2\Cinema\Cinema\obj\Debug\netcoreapp3.1\Cinema.dll
 C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\bead1\Cinema2\Cinema\Cinema\obj\Debug\netcoreapp3.1\Cinema.pdb
 C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\bead1\Cinema2\Cinema\Cinema\obj\Debug\netcoreapp3.1\Cinema.csprojAssemblyReference.cache
+C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\bead1\Cinema2\Cinema\Cinema\obj\Debug\netcoreapp3.1\Razor\Views\Screenings\Success.cshtml.g.cs

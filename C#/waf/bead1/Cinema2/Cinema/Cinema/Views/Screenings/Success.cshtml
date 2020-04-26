@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewData["Title"] = "Success";
+}
+<script>
+    var timer = 3;
+    setInterval(function () {
+        document.getElementById("timer").innerHTML = "You will be sent to the Home page in " + timer + " seconds...";
+        timer--;
+    }, 1000);
+
+    setTimeout(function () {
+        window.location.href = "/Home";
+    }, 4000);
+</script>
+
+<h1 class="h1 text-center">Success!</h1>
+<p id="timer" class="text-center">You will be sent to the Home page in 4 seconds...</p>
+
