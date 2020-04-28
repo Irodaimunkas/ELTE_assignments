@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="Cinema.Models.Movie">
+    <Position X="10.5" Y="0.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACABAAAAAAgAAAAAAAAAQIAAAAABAAAAAAAAAACAA=</HashCode>
+      <FileName>Models\Movie.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cinema.Models.Room">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAEAAAAAAAAQAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>Models\Room.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cinema.Models.Screening">
+    <Position X="9.75" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAACAAAAEAAAABAAAAAAIQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Screening.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Room" />
+      <Property Name="Movie" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Cinema.Models.Seat">
+    <Position X="6" Y="4" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACCAAGAAAAAAAAABBAQAEAAAAAAgAAAAAAAAAgAAA=</HashCode>
+      <FileName>Models\Seat.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Room" />
+      <Property Name="Screening" />
+      <Property Name="Status" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Cinema.Models.SeatsViewModel">
+    <Position X="3.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAgAEQAEAAAAEAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>Models\SeatsViewModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Seats" />
+    </ShowAsAssociation>
+  </Class>
+  <Enum Name="Cinema.Models.Status">
+    <Position X="3.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAABAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Models\Seat.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

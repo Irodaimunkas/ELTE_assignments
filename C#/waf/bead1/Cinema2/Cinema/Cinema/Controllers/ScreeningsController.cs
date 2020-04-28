@@ -55,10 +55,23 @@ namespace Cinema.Controllers
         [HttpPost]
         public IActionResult Booking(SeatsViewModel viewModel, Int32 movieId)
         {
+            var seatsInDatab = _service.GetSeatsByScreeningId(viewModel.ScreeningId);
+            bool modelValid = false;
+
+            foreach (var seat in seatsInDatab)
+            {
+                if (seat.Status != viewModel.Seats[seat.Row][seat.Column])
+                {
+                    modelValid = true;
+                    break;
+                }
+            }
+
+            if (!modelValid)
+                ModelState.AddModelError("SeatBooked", "Must select booked seats.");
+
             if (ModelState.IsValid)
             {
-                var seatsInDatab = _service.GetSeatsByScreeningId(viewModel.ScreeningId);
-
                 foreach(var seat in seatsInDatab)
                 {
                     if(seat.Status != viewModel.Seats[seat.Row][seat.Column])
