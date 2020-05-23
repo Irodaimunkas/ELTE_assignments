@@ -7,14 +7,12 @@ using System.Threading.Tasks;
 
 namespace Cinema.Models
 {
-    public class CinemaContext : DbContext
+    public class CinemaContext : IdentityDbContext<Employee>
     {
         public CinemaContext(DbContextOptions<CinemaContext> options)
             : base(options)
         {
         }
-
-        public DbSet<Employee> Employees { get; set; }
 
         public DbSet<Movie> Movies { get; set; }
 

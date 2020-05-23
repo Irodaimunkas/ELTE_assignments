@@ -1,0 +1,8 @@
+C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\bead1\Cinema2\Cinema\Cinema.Persistence\bin\Debug\netstandard2.1\Cinema.Persistence.deps.json
+C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\bead1\Cinema2\Cinema\Cinema.Persistence\bin\Debug\netstandard2.1\Cinema.Persistence.dll
+C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\bead1\Cinema2\Cinema\Cinema.Persistence\bin\Debug\netstandard2.1\Cinema.Persistence.pdb
+C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\bead1\Cinema2\Cinema\Cinema.Persistence\obj\Debug\netstandard2.1\Cinema.Persistence.csprojAssemblyReference.cache
+C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\bead1\Cinema2\Cinema\Cinema.Persistence\obj\Debug\netstandard2.1\Cinema.Persistence.AssemblyInfoInputs.cache
+C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\bead1\Cinema2\Cinema\Cinema.Persistence\obj\Debug\netstandard2.1\Cinema.Persistence.AssemblyInfo.cs
+C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\bead1\Cinema2\Cinema\Cinema.Persistence\obj\Debug\netstandard2.1\Cinema.Persistence.dll
+C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\bead1\Cinema2\Cinema\Cinema.Persistence\obj\Debug\netstandard2.1\Cinema.Persistence.pdb

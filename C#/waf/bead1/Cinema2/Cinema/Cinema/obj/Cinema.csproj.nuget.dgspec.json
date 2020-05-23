@@ -4,6 +4,78 @@
     "C:\\Users\\gonda\\Desktop\\git\\ELTE_assignments\\C#\\waf\\bead1\\Cinema2\\Cinema\\Cinema\\Cinema.csproj": {}
   },
   "projects": {
+    "C:\\Users\\gonda\\Desktop\\git\\ELTE_assignments\\C#\\waf\\bead1\\Cinema2\\Cinema\\Cinema.Persistence\\Cinema.Persistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\gonda\\Desktop\\git\\ELTE_assignments\\C#\\waf\\bead1\\Cinema2\\Cinema\\Cinema.Persistence\\Cinema.Persistence.csproj",
+        "projectName": "Cinema.Persistence",
+        "projectPath": "C:\\Users\\gonda\\Desktop\\git\\ELTE_assignments\\C#\\waf\\bead1\\Cinema2\\Cinema\\Cinema.Persistence\\Cinema.Persistence.csproj",
+        "packagesPath": "C:\\Users\\gonda\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gonda\\Desktop\\git\\ELTE_assignments\\C#\\waf\\bead1\\Cinema2\\Cinema\\Cinema.Persistence\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\gonda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\gonda\\Desktop\\git\\ELTE_assignments\\C#\\waf\\bead1\\Cinema2\\Cinema\\Cinema\\Cinema.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -30,7 +102,11 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\gonda\\Desktop\\git\\ELTE_assignments\\C#\\waf\\bead1\\Cinema2\\Cinema\\Cinema.Persistence\\Cinema.Persistence.csproj": {
+                "projectPath": "C:\\Users\\gonda\\Desktop\\git\\ELTE_assignments\\C#\\waf\\bead1\\Cinema2\\Cinema\\Cinema.Persistence\\Cinema.Persistence.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -48,7 +124,7 @@
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[3.1.3, )"
+              "version": "[3.1.4, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
@@ -62,7 +138,7 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.1.3, )"
+              "version": "[3.1.4, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
