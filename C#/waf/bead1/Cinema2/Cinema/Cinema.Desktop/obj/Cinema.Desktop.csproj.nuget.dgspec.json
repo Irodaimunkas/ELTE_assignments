@@ -1,0 +1,161 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\gonda\\Desktop\\git\\ELTE_assignments\\C#\\waf\\bead1\\Cinema2\\Cinema\\Cinema.Desktop\\Cinema.Desktop.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\gonda\\Desktop\\git\\ELTE_assignments\\C#\\waf\\bead1\\Cinema2\\Cinema\\Cinema.Desktop\\Cinema.Desktop.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\gonda\\Desktop\\git\\ELTE_assignments\\C#\\waf\\bead1\\Cinema2\\Cinema\\Cinema.Desktop\\Cinema.Desktop.csproj",
+        "projectName": "Cinema.Desktop",
+        "projectPath": "C:\\Users\\gonda\\Desktop\\git\\ELTE_assignments\\C#\\waf\\bead1\\Cinema2\\Cinema\\Cinema.Desktop\\Cinema.Desktop.csproj",
+        "packagesPath": "C:\\Users\\gonda\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gonda\\Desktop\\git\\ELTE_assignments\\C#\\waf\\bead1\\Cinema2\\Cinema\\Cinema.Desktop\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\gonda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\gonda\\Desktop\\git\\ELTE_assignments\\C#\\waf\\bead1\\Cinema2\\Cinema\\Cinema.Persistence\\Cinema.Persistence.csproj": {
+                "projectPath": "C:\\Users\\gonda\\Desktop\\git\\ELTE_assignments\\C#\\waf\\bead1\\Cinema2\\Cinema\\Cinema.Persistence\\Cinema.Persistence.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNet.WebApi.Client": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
+            "Microsoft.Xaml.Behaviors.Wpf": {
+              "target": "Package",
+              "version": "[1.1.19, )"
+            },
+            "MiqM.Xceed.Wpf.Toolkit.NETCore": {
+              "target": "Package",
+              "version": "[3.5.1.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\gonda\\Desktop\\git\\ELTE_assignments\\C#\\waf\\bead1\\Cinema2\\Cinema\\Cinema.Persistence\\Cinema.Persistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\gonda\\Desktop\\git\\ELTE_assignments\\C#\\waf\\bead1\\Cinema2\\Cinema\\Cinema.Persistence\\Cinema.Persistence.csproj",
+        "projectName": "Cinema.Persistence",
+        "projectPath": "C:\\Users\\gonda\\Desktop\\git\\ELTE_assignments\\C#\\waf\\bead1\\Cinema2\\Cinema\\Cinema.Persistence\\Cinema.Persistence.csproj",
+        "packagesPath": "C:\\Users\\gonda\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gonda\\Desktop\\git\\ELTE_assignments\\C#\\waf\\bead1\\Cinema2\\Cinema\\Cinema.Persistence\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\gonda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "dependencies": {
+            "Microsoft.AspNet.WebApi.Client": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

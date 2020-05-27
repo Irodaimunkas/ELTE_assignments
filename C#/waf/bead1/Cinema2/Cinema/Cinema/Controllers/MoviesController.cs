@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Cinema.Models;
+using Cinema.Persistence;
 using Cinema.Services;
 using Microsoft.AspNetCore.Mvc;
 

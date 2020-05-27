@@ -26,8 +26,15 @@ using Cinema.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\bead1\Cinema2\Cinema\Cinema\Views\_ViewImports.cshtml"
+using Cinema.Persistence;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"421cddfe0e34a91b78f2db9afdacfa1361725697", @"/Views/Screenings/Success.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"88b38380ea0d4f64bad62cefdedd00944e4c52ec", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"82188eed98693d3b07c7be7ca8ee87f62bb66a7a", @"/Views/_ViewImports.cshtml")]
     public class Views_Screenings_Success : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

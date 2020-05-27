@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -6,13 +7,16 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Cinema.Models
+namespace Cinema.Persistence
 {
     public static class DbInitializer
     {
+        private static UserManager<Employee> _userManager;
+
         public static void Initialize(IServiceProvider serviceProvider, string imageDirectory)
         {
             CinemaContext context = serviceProvider.GetRequiredService<CinemaContext>();
+            _userManager = serviceProvider.GetRequiredService<UserManager<Employee>>();
 
             /*
              Adatbázis létrehozása (amennyiben nem létezik), illetve a migrációk alapján a frissítése.
@@ -28,6 +32,12 @@ namespace Cinema.Models
             {
                 return; // Az adatbázis már inicializálva van.
             }
+
+            _userManager.CreateAsync(new Employee
+            {
+                UserName = "admin",
+                RealName = "Gonda David"
+            }, "Admin12345");
 
             var bladerunnerPath = Path.Combine(imageDirectory, "blade_runner_2049.jpg");
             var gbphPath = Path.Combine(imageDirectory, "grand_budapest_hotel.jpg");

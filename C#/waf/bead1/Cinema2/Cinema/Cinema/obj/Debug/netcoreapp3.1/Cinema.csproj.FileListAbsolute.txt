@@ -10,6 +10,7 @@ C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\bead1\Cinema2\Cinema\Cinema\b
 C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\bead1\Cinema2\Cinema\Cinema\bin\Debug\netcoreapp3.1\Cinema.pdb
 C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\bead1\Cinema2\Cinema\Cinema\bin\Debug\netcoreapp3.1\Cinema.Views.dll
 C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\bead1\Cinema2\Cinema\Cinema\bin\Debug\netcoreapp3.1\Cinema.Views.pdb
+C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\bead1\Cinema2\Cinema\Cinema\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
 C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\bead1\Cinema2\Cinema\Cinema\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\bead1\Cinema2\Cinema\Cinema\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\bead1\Cinema2\Cinema\Cinema\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
@@ -54,6 +55,7 @@ C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\bead1\Cinema2\Cinema\Cinema\b
 C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\bead1\Cinema2\Cinema\Cinema\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
 C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\bead1\Cinema2\Cinema\Cinema\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
 C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\bead1\Cinema2\Cinema\Cinema\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\bead1\Cinema2\Cinema\Cinema\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\bead1\Cinema2\Cinema\Cinema\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
 C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\bead1\Cinema2\Cinema\Cinema\bin\Debug\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
 C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\bead1\Cinema2\Cinema\Cinema\bin\Debug\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
@@ -144,7 +146,6 @@ C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\bead1\Cinema2\Cinema\Cinema\b
 C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\bead1\Cinema2\Cinema\Cinema\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\bead1\Cinema2\Cinema\Cinema\bin\Debug\netcoreapp3.1\Cinema.Persistence.dll
 C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\bead1\Cinema2\Cinema\Cinema\bin\Debug\netcoreapp3.1\Cinema.Persistence.pdb
-C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\bead1\Cinema2\Cinema\Cinema\obj\Debug\netcoreapp3.1\Cinema.csprojAssemblyReference.cache
 C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\bead1\Cinema2\Cinema\Cinema\obj\Debug\netcoreapp3.1\staticwebassets\Cinema.StaticWebAssets.Manifest.cache
 C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\bead1\Cinema2\Cinema\Cinema\obj\Debug\netcoreapp3.1\staticwebassets\Cinema.StaticWebAssets.xml
 C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\bead1\Cinema2\Cinema\Cinema\obj\Debug\netcoreapp3.1\Cinema.MvcApplicationPartsAssemblyInfo.cache
@@ -159,7 +160,6 @@ C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\bead1\Cinema2\Cinema\Cinema\o
 C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\bead1\Cinema2\Cinema\Cinema\obj\Debug\netcoreapp3.1\Razor\Views\Movies\Details.cshtml.g.cs
 C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\bead1\Cinema2\Cinema\Cinema\obj\Debug\netcoreapp3.1\Razor\Views\Screenings\Booking.cshtml.g.cs
 C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\bead1\Cinema2\Cinema\Cinema\obj\Debug\netcoreapp3.1\Razor\Views\Screenings\Success.cshtml.g.cs
-C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\bead1\Cinema2\Cinema\Cinema\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\bead1\Cinema2\Cinema\Cinema\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\bead1\Cinema2\Cinema\Cinema\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\bead1\Cinema2\Cinema\Cinema\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
@@ -170,3 +170,4 @@ C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\bead1\Cinema2\Cinema\Cinema\o
 C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\bead1\Cinema2\Cinema\Cinema\obj\Debug\netcoreapp3.1\Cinema.csproj.CopyComplete
 C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\bead1\Cinema2\Cinema\Cinema\obj\Debug\netcoreapp3.1\Cinema.dll
 C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\bead1\Cinema2\Cinema\Cinema\obj\Debug\netcoreapp3.1\Cinema.pdb
+C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\bead1\Cinema2\Cinema\Cinema\obj\Debug\netcoreapp3.1\Cinema.csprojAssemblyReference.cache

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Cinema.Models;
+using Cinema.Persistence;
 using Cinema.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -42,6 +42,18 @@ namespace Cinema
                         options.UseSqlite(Configuration.GetConnectionString("SqliteConnection")));
                     break;
             }
+
+            services.AddIdentity<Employee, IdentityRole>(options =>
+            {
+                options.Password.RequireDigit = false;
+                options.Password.RequiredLength = 3;
+                options.Password.RequiredUniqueChars = 0;
+                options.Password.RequireLowercase = false;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireUppercase = false;
+            })
+            .AddEntityFrameworkStores<CinemaContext>()
+            .AddDefaultTokenProviders();
 
             // A teendők kezelésére szolgáló service regisztrálása az IoC tárolóba
             services.AddTransient<CinemaService>();

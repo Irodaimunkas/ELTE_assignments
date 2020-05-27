@@ -1,4 +1,5 @@
-﻿using Cinema.Models;
+﻿using Cinema.Persistence;
+using Cinema.Persistence.DTO;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -37,6 +38,27 @@ namespace Cinema.Services
             return true;
         }
 
+        public IEnumerable<Room> GetRooms()
+        {
+            return _context.Rooms
+                .ToList();
+        }
+
+        public Movie CreateMovie(Movie movie)
+        {
+            try
+            {
+                _context.Add(movie);
+                _context.SaveChanges();
+            }
+            catch (DbUpdateException)
+            {
+                return null;
+            }
+
+            return movie;
+        }
+
         public List<Seat> GetSeatsByScreeningId(int screeningId)
         {
             return _context.Seats
@@ -44,7 +66,14 @@ namespace Cinema.Services
                 .ToList();
         }
 
-        public bool CreateSeat(Seat seat)
+        public Seat GetSeat(int id)
+        {
+            return _context.Seats
+                .Where(i => i.Id == id)
+                .FirstOrDefault();
+        }
+
+        public Seat CreateSeat(Seat seat)
         {
             try
             {
@@ -53,10 +82,25 @@ namespace Cinema.Services
             }
             catch (DbUpdateException)
             {
-                return false;
+                return null;
             }
 
-            return true;
+            return seat;
+        }
+
+        public Screening CreateScreening(Screening screening)
+        {
+            try
+            {
+                _context.Add(screening);
+                _context.SaveChanges();
+            }
+            catch (DbUpdateException)
+            {
+                return null;
+            }
+
+            return screening;
         }
 
         public Room GetRoom(int roomId)

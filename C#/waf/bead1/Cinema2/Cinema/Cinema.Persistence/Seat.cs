@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Cinema.Models
+namespace Cinema.Persistence
 {
     public enum Status { Sold, Free, Booked }
     public class Seat
