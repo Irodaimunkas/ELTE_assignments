@@ -85,6 +85,7 @@ namespace Cinema.Desktop
             };
 
             _addScreeningViewModel.AddingScreeningEnded += ViewModel_AddingScreeningEnded;
+            _addScreeningView.Closed += ViewModel_AddingScreeningEnded;
 
             _addScreeningView.ShowDialog();
         }
@@ -92,6 +93,7 @@ namespace Cinema.Desktop
         private void ViewModel_AddingScreeningEnded(object sender, EventArgs e)
         {
             _addScreeningViewModel.AddingScreeningEnded -= ViewModel_AddingScreeningEnded;
+            _addScreeningView.Closed -= ViewModel_AddingScreeningEnded;
 
             _addScreeningView.Close();
 

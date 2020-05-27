@@ -116,7 +116,7 @@ namespace Cinema.Desktop.ViewModel
                 StartTime = Date
             };
 
-            _service.CreateScreening(upScreening);
+            await _service.CreateScreening(upScreening);
 
             AddingScreeningEnded?.Invoke(this, EventArgs.Empty);
         }

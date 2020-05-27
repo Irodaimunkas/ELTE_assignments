@@ -4,6 +4,8 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Text;
+using System.Text.RegularExpressions;
+using System.Windows;
 
 namespace Cinema.Desktop.ViewModel
 {
@@ -89,6 +91,23 @@ namespace Cinema.Desktop.ViewModel
 
         private void Checkout()
         {
+            if(PhoneNumber is null || PhoneNumber.Length <= 0)
+            {
+                MessageBox.Show("Phone number required!", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+            else if(!Regex.Match(PhoneNumber, @"^\+?[0-9]{2}[0-9]{9}$").Success)
+            {
+                MessageBox.Show("Not a phone number!", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
+            if(Name is null || Name.Length <= 0)
+            {
+                MessageBox.Show("Name required!", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
             foreach(var seat in Seats)
             {
                 if(seat.Status != seat.NewStatus)

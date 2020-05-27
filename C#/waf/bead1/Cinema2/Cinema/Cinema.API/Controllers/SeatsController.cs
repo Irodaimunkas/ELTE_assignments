@@ -65,7 +65,7 @@ namespace Cinema.API.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult PutList(Int32 id, SeatDto seat)
+        public IActionResult PutSeat(Int32 id, SeatDto seat)
         {
             if (id != seat.Id)
             {

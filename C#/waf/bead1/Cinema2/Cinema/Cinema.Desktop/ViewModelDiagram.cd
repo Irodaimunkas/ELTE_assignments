@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="Cinema.Desktop.ViewModel.AddMovieViewModel">
+    <Position X="2.75" Y="8.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAECABAAEAAAgAAQBAAIAIQIAAAAABAAAAQAAAAAAAA=</HashCode>
+      <FileName>ViewModel\AddMovieViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cinema.Desktop.ViewModel.AddScreeningViewModel">
+    <Position X="11.5" Y="4.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAASABAAAgIQAAAAIABQSAAAAACBAAAAAAAAgAQ=</HashCode>
+      <FileName>ViewModel\AddScreeningViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cinema.Desktop.ViewModel.BuyTicketViewModel">
+    <Position X="11.25" Y="10.25" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>ACABIQACAAAABEKQAwAAQAUAAEAAAAAAAAAAAAgEAAA=</HashCode>
+      <FileName>ViewModel\BuyTicketViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cinema.Desktop.ViewModel.LoginViewModel">
+    <Position X="2.75" Y="4.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AgCCAAAAAACAAAAQAAAAAAAAAAAAAAAEAQAAEACAAAI=</HashCode>
+      <FileName>ViewModel\LoginViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cinema.Desktop.ViewModel.MainWindowViewModel">
+    <Position X="6.75" Y="4.25" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AECKAAAQABEAEEAQBAAAAAAAAAAACACBAAQQAAAAYIA=</HashCode>
+      <FileName>ViewModel\MainWindowViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cinema.Desktop.ViewModel.MovieViewModel">
+    <Position X="6.75" Y="14.75" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAACACAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>ViewModel\MovieViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cinema.Desktop.ViewModel.RoomViewModel">
+    <Position X="2.75" Y="13.75" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAACACQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\RoomViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cinema.Desktop.ViewModel.ScreeningViewModel">
+    <Position X="6.75" Y="10.25" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AAACgAAGIAIAAAAABCBAAgAAIQAAAAACAAAAABAAAAA=</HashCode>
+      <FileName>ViewModel\ScreeningViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cinema.Desktop.ViewModel.SeatViewModel">
+    <Position X="2.75" Y="16.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AEADAAAEAAAIAAAAAEAAQAQAAAAAAAAAAAAAgAAAYAA=</HashCode>
+      <FileName>ViewModel\SeatViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

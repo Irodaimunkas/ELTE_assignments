@@ -3,6 +3,7 @@ using Cinema.Persistence.DTO;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Windows;
 
 namespace Cinema.Desktop.ViewModel
 {
@@ -51,6 +52,12 @@ namespace Cinema.Desktop.ViewModel
 
         private async void AddingMovie()
         {
+            if(Name is null || Name.Length <= 0 || Director is null || Director.Length <= 0 || Synopsis is null || Synopsis.Length <= 0 || LengthInMinutes <= 0 || Image is null || Image.Length <= 0)
+            {
+                MessageBox.Show("Missing information!", "Error!", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
             var movie = new MovieDto
             {
                 Name = Name,

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="Cinema.Desktop.Model.CinemaAPIService">
+    <Position X="2" Y="1" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAgBCgAAAEAAAACAAQAAAEAAAACAAABQAAAAAAA=</HashCode>
+      <FileName>Model\CinemaAPIService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cinema.Desktop.Model.NetworkException">
+    <Position X="6.25" Y="1" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\NetworkException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
