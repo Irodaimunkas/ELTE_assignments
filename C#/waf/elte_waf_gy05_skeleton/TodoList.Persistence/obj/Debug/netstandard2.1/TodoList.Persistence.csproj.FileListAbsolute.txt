@@ -1,0 +1,8 @@
+C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\elte_waf_gy05_skeleton\TodoList.Persistence\bin\Debug\netstandard2.1\TodoList.Persistence.deps.json
+C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\elte_waf_gy05_skeleton\TodoList.Persistence\bin\Debug\netstandard2.1\TodoList.Persistence.dll
+C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\elte_waf_gy05_skeleton\TodoList.Persistence\bin\Debug\netstandard2.1\TodoList.Persistence.pdb
+C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\elte_waf_gy05_skeleton\TodoList.Persistence\obj\Debug\netstandard2.1\TodoList.Persistence.csprojAssemblyReference.cache
+C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\elte_waf_gy05_skeleton\TodoList.Persistence\obj\Debug\netstandard2.1\TodoList.Persistence.AssemblyInfoInputs.cache
+C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\elte_waf_gy05_skeleton\TodoList.Persistence\obj\Debug\netstandard2.1\TodoList.Persistence.AssemblyInfo.cs
+C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\elte_waf_gy05_skeleton\TodoList.Persistence\obj\Debug\netstandard2.1\TodoList.Persistence.dll
+C:\Users\gonda\Desktop\git\ELTE_assignments\C#\waf\elte_waf_gy05_skeleton\TodoList.Persistence\obj\Debug\netstandard2.1\TodoList.Persistence.pdb
